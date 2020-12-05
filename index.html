@@ -1,5 +1,103 @@
 <html>
-<body>
-Hello World!
-</body>
+    <head>
+        <title>倉頡字碼查詢</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style>
+            #input{
+                border: solid grey 2px;
+                border-top: unset;
+                border-left: unset;
+                border-right: unset;
+                height: 30px;
+                width: 500px;
+                transition: border-bottom 0.5s;
+                transition-timing-function: ease;
+                outline: none;
+            }
+            #input:focus{
+                border-bottom: solid seagreen 2px;
+            }
+            #btn{
+                border-radius: 100%;
+                width: 24px;
+                height: 24px;
+                border: 2px solid grey;
+                position: relative;
+                margin:30px auto;
+                bottom: 8px;
+            }
+            #btn:after{
+                content: "";
+                transform: rotate(45deg);
+                width:10px;
+                height: 2px;
+                position: absolute;
+                top:20px;
+                left:17px;
+                background-color: grey;
+                
+            }
+            #centre{
+                position: relative;
+                text-align: center;
+                width: 100%;
+                margin: 0 auto;
+                z-index: 99999;
+            }
+            #pics{
+                text-align: center;
+                position: relative;
+                top: 25px;
+            }
+            #title{
+                text-align: center;
+                font-size: 36px;
+
+            }
+            #reference{
+                display: block;
+                left: 50%;
+                bottom: 0px;
+                position: absolute;
+                transform: translateX(-50%);
+            }
+
+        </style>
+    </head>
+    <script src="./charToBIG5Code.json"></script>
+    
+    <div id="title">倉頡字碼查詢</div>
+    <div id="centre">
+    <input id="input" placeholder="輸入需要查詢的文字">
+    <button id="btn"></button>
+    </div>
+    <div id="reference">資料來源: <a href="http://input.foruto.com/cccls/cjzd.html">華通軟件</a> <a href="https://github.com/staristic/BIG5-JSON">GitHub:staristic/BIG5-JSON</a></div>
+
+    <div id="pics">
+
+    </div>
+
+    <script>
+        var input = document.getElementById("input");
+        var btn = document.getElementById("btn");
+        var pics = document.getElementById('pics');
+
+        btn.onclick = function(){
+            pics.innerHTML = "";
+            for(var i=0; i<=input.value.length-1; i++){
+                var big5code = eval("big5." + input.value[i]);
+                var newpics = document.createElement("img");
+                newpics.src = "http://input.foruto.com/cjdict/Images/CJZD_JPG/"+ big5code +".JPG";
+                pics.appendChild(newpics);
+            }
+        }
+
+        input.addEventListener("keydown", function(event) {
+            if (event.keyCode === 13) {
+                btn.click();
+            }
+        });
+    </script>
+    
+    
 </html>
