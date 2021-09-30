@@ -58,6 +58,10 @@
                     case 'K':
                         Page.scrollTop(-200);
                         break;
+
+                    case 'X':
+                        closewin();
+                        break;
  
                     case ' ':
                         Page.plus();
@@ -413,7 +417,7 @@ z-index: 2147483648;
                 (element.tagName.match(/INPUT|TEXTAREA/) || element.hasAttribute('contenteditable'));
  
             var char = String.fromCharCode(event.keyCode).toUpperCase();
-            var isUseful = $('._hint, ._click').length || 'FJK'.includes(char);
+            var isUseful = $('._hint, ._click').length || 'FJKX'.includes(char);
  
             return !event.ctrlKey && !isInput && isUseful;
         }
@@ -515,4 +519,16 @@ z-index: 2147483648;
         var suffix = count > 1 ? '[' + count + ']' : '';
         return xPath(node.parentNode) + '/' + node.tagName + suffix;
     }
+
+    function closewin(){
+        if (navigator.userAgent.indexOf("Firefox") != -1 || navigator.userAgent.indexOf("Chrome") !=-1) {
+            window.location.href="about:blank";
+            window.close();
+        } else {
+            window.opener = null;
+            window.open("", "_self");
+            window.close();
+        }
+    }
+    
 })();
