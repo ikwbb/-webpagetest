@@ -212,8 +212,8 @@ var searchBtn = document.getElementById("searchBtn")
 searchBtn.onclick = () => {
     results.innerHTML = ""
 
-    var repeat = ran(20)
-    for(j=0; j<5; j++){
+    var repeat = ran(8)
+    for(j=0; j<repeat; j++){
         if(genResult() == false){
             break
         }
