@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Beauty Hunter - Half Mirror Full Error</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+
+    <script src="script.js" defer></script>
+
+    <!-- Bootstrap core CSS -->
+<link href="../bootstrap.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .btn-outline-primary:hover {
+        color: #0d6efd;
+        border-color: #0d6efd;
+        background-color: inherit;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex h-100 text-center text-dark bg-light">
+    
+<div class="cover-container d-flex w-100 h-100  mx-auto flex-column">
+  <header class="mb-2 p-3 bg-dark text-light">
+    <div>
+      <h3 class="float-md-start mb-0">Half Mirror Full Error</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+        <a class="nav-link" href="../ai">Ai Facial Scan</a>
+        <a class="nav-link active" href="./">Beauty Hunter</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-3">
+
+
+
+<!--     <h1>Cover your page.</h1>
+    <p class="">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+    <p class="lead">
+      <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+    </p> -->
+
+    <div class="container text-start board bg-light text-dark rounded p-1">
+
+      <div class="accordion" id="accordionPanelsStayOpenExample">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#filter" aria-expanded="true" aria-controls="filter">
+              Filter
+            </button>
+          </h2>
+          <div id="filter" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+
+              <div class="wrapAll1">
+                <div class="row">
+                  <div class="col">
+                    <ul class="nav nav-tabs">
+          
+                      <li class="nav-item">
+                        <button id="findBS" class="nav-link active" aria-current="page" href="#">Beauty Services</button>
+                      </li>
+          
+                      <li class="nav-item">
+                        <button id="findBP" class="nav-link" href="#">Beauty Products</button>
+                      </li>
+          
+                    </ul>
+                  </div>
+                </div>
+          
+                <div class="row">
+                  <div class="col">
+          
+                    <div id="shopHunter">
+                      <h1 class="h1 text-center mt-2">Beauty Services Filter</h1>
+          
+                      <h1 class="h5">District:</h1>
+                      <select class="form-select" aria-label="Default select example" id="districts">
+                        <option value="Kowloon">Kowloon</option>
+                        <option value="Hong Kong Island">Hong Kong Island</option>
+                        <option value="New Territories">New Territories</option>
+                      </select>
+          
+                      <h1 class="h5 mt-2">Walking time:</h1>
+                      <label for="customRange3" class="form-label" ><span id="rangeLabel">60</span> minutes</label>
+                      <input type="range" class="form-range" min="1" max="120" step="1" id="customRange3">
+          
+                      <h1 class="h5 mt-2">Services:</h1>
+                      <div class="d-flex flex-row flex-wrap">
+                        <div class="checkBox me-2 mb-2">
+                          <input type="checkbox" class="btn-check" id="btn-skincare" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btn-skincare">
+                            Facial skincare</label><br>
+                        </div>
+          
+                        <div class="checkBox me-2 mb-2">
+                          <input type="checkbox" class="btn-check" id="btn-manicures" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btn-manicures">
+                            Manicures</label><br>
+                        </div>
+                        
+                        <div class="checkBox me-2 mb-2">
+                          <input type="checkbox" class="btn-check" id="btn-massage" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btn-massage">
+                            Massage</label><br>
+                        </div>
+          
+                        <div class="checkBox me-2 mb-2">
+                          <input type="checkbox" class="btn-check" id="btn-pedicure" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btn-pedicure">
+                            Pedicure</label><br>
+                        </div>
+          
+                        <div class="checkBox me-2 mb-2">
+                          <input type="checkbox" class="btn-check" id="btn-makeup" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btn-makeup">
+                            Makeup</label><br>
+                        </div>
+                      </div>
+          
+                      <h1 class="h5 mt-2">Rating:</h1>
+                      <label for="ratingBar" class="form-label" >At least <span id="ratingLabel">5</span> stars or above</label>
+                      <input type="range" class="form-range" min="1" max="5" step="1" id="ratingBar">
+          
+
+                      <h1 class="h5 mt-2">Professional qualifications:</h1>
+                      <div class="d-flex flex-row flex-wrap">
+                        <div class="checkBox me-2 mb-2">
+                          <input type="checkbox" class="btn-check" id="btn-ITECT" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btn-ITECT">
+                            ITECT</label><br>
+                        </div>
+          
+                        <div class="checkBox me-2 mb-2">
+                          <input type="checkbox" class="btn-check" id="btn-CIBTAC" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btn-CIBTAC">
+                            CIBTAC</label><br>
+                        </div>
+                        
+                        <div class="checkBox me-2 mb-2">
+                          <input type="checkbox" class="btn-check" id="btn-CGD" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="btn-CGD">
+                            City & Guilds Diploma</label><br>
+                        </div>
+                      </div>
+                      
+          
+                      <h1 class="h5 mt-2">Pricing:</h1>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+          
+                            <div class="radio me-2 mb-2">
+                              <input type="radio" name="radio-pricing" class="btn-check" id="btn-public" autocomplete="off">
+                              <label class="btn btn-outline-primary w-100" for="btn-public">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"></path>
+                                </svg><br>
+                                Public</label><br>
+                            </div>
+          
+                          </div>
+          
+                          <div class="col">
+                            <div class="radio me-2 mb-2">
+                              <input type="radio" name="radio-pricing" class="btn-check" id="btn-medium" autocomplete="off">
+                              <label class="btn btn-outline-primary w-100" for="btn-medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"></path>
+                                </svg><br>
+                                Medium</label><br>
+                            </div>
+                          </div>
+          
+                          <div class="col">
+                            <div class="radio me-2 mb-2">
+                              <input type="radio" name="radio-pricing" class="btn-check" id="btn-premium" autocomplete="off">
+                              <label class="btn btn-outline-primary w-100" for="btn-premium">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"></path>
+                                </svg><br>
+                                Premium</label><br>
+                            </div>
+                          </div>
+          
+                        </div>
+                      </div>
+          
+                      <div class="row mt-3">
+                        <div class="col text-center">
+                          <button type="button" class="btn btn-success btn-lg" id="searchBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                            </svg>
+                            Search
+                          </button>
+                        </div>
+                      </div>
+          
+                      
+                
+                    </div>
+          
+                    <div id="productHunter" class="d-none">
+                      <h1 class="h1 text-center mt-2">Beauty Products Filter</h1>
+                      <h1 class="h3 text-center mt-2">Developing...</h1>
+                    </div>
+                  </div>
+          
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+<!--         <div class="accordion-item">
+          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#filtrateResults" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              Filtrated results
+            </button>
+          </h2>
+          <div id="filtrateResults" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+            <div class="accordion-body">
+              test
+              
+
+            </div>
+          </div>
+        </div> -->
+ 
+      </div>
+
+
+
+      
+    </div>
+
+
+    <div id="filterResult" class="my-5 container text-start p-3">
+      <div class="row">
+        <div class="col">
+          <h1 class="h2">Results:</h1>
+        </div>
+      </div>    
+
+
+      <div id="results"></div>
+      
+    </div>
+
+      
+
+
+
+
+
+  </main>
+
+  <footer class="mt-auto text-white-50">
+    <p class="mt-2 text-dark">@ Half Mirror Full Error 2021</p>
+  </footer>
+</div>
+
+
+    
+  </body>
+<script src="../bootstrap.js"></script>
+</html>
+
+
