@@ -36,7 +36,7 @@ function startVideo(){
   navigator.mediaDevices.getUserMedia(constraints).then(
     function(mediaStream){
       video.srcObject = mediaStream;
-      MediaStream = mediaStream
+      MediaStream = mediaStream.getTracks()[0];
     }
   ).catch(
     function(err){

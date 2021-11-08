@@ -21,6 +21,7 @@ var recStatus = new Array("Use a facial mask to absorb additional water", "Use a
 var recTypes = new Array("Use a cleanser to equalize your oil conditions", "Your skin type is in a well condition! No additional skincare need to be done for this!")
 
 
+
 snap.onclick = () => {
     iconToSpinner()
     setTimeout(getAnalysis, 1500)
@@ -39,6 +40,8 @@ function iconToSpinner(){
     spinner.classList.remove("d-none")
 
     btnText.innerHTML = "Analyzing your face..."
+
+    
 }
 
 
