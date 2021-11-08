@@ -60,6 +60,8 @@ video.addEventListener('play', () => {
   displayCanvas.width = video.videoWidth
   displayCanvas.height = video.videoHeight
 
+  initPrompt()
+
   interval1 = setInterval(async () => {
     const detections = await faceapi.detectSingleFace(video, new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks()//.withFaceExpressions()
     const resizedDetections = faceapi.resizeResults(detections, displaySize)
@@ -138,4 +140,16 @@ function crop(facialData){
 
   croppedCanvas.getContext('2d').clearRect(0, 0, croppedCanvas.width, croppedCanvas.height)
   croppedCanvas.getContext('2d').drawImage(displayCanvas, x, y, w, h, 0 ,0, w, h)
+}
+
+
+var snap = document.getElementById("snap")
+var initLabel = document.getElementById("initializingLabel")
+
+function initPrompt(){
+  displayCanvas.classList.remove("d-none")
+  snap.classList.remove("d-none") 
+
+  initLabel.classList.add("d-none")
+
 }
