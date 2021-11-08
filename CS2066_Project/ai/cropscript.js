@@ -23,8 +23,12 @@ var recTypes = new Array("Use a cleanser to equalize your oil conditions", "Your
 
 
 snap.onclick = () => {
-    iconToSpinner()
-    setTimeout(getAnalysis, 1500)
+    if(facialData){
+        iconToSpinner()
+        setTimeout(getAnalysis, 1500)
+    }else{
+        alert("No Face detected!")
+    }
 }
 
 function ran(num){
