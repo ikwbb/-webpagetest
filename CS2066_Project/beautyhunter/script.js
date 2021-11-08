@@ -1,5 +1,7 @@
 const picNum = 11
 
+ratingAfterSearch = 0;
+
 function g(str){
     return document.getElementById(str)
 }
@@ -117,6 +119,7 @@ function genResult(){
 
 
     var trating = rating.value
+    ratingAfterSearch = rating.value
 
 
     var tprof = new Array()
@@ -186,6 +189,13 @@ function showResult(dist2, time2, serv2, rating2, prof2, price2){
                 Professional qualifications: <span id="r-qualification">${profStr}</span><br>
                 Services: <span id="r-sercives">${servicesStr}</span><br>
                 Walking time: <span id="r-time">Within ${timeStr} minutes</span><br>
+                <button type="button" class="btn btn-outline-secondary" onclick="showComments()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    Comments
+                </button>
               </div>
             </div>
           </div>
@@ -214,7 +224,7 @@ searchBtn.onclick = () => {
     var HTML2 = ""
 
 
-    var repeat = ran(8)
+    var repeat = ran(8) + 1
     for(j=0; j<repeat; j++){
         var generatedResult = genResult()
         if(generatedResult == false){
@@ -249,4 +259,33 @@ function genResultLabel(){
 
     results.innerHTML = resultLabel
     
+}
+
+var comments = new Array("Good experiences!", "Good!I had a good time using these.", "Love them so much", "It is suitable for me!", "It is a good thing.", "I like it so much!")
+var commentModal = new bootstrap.Modal(document.getElementById("commentModal"))
+var commentBody = document.getElementById("commentBody")
+
+function showComments(){
+    var HTML = ""
+    var commentNum = ran(6)+1
+
+    for(i=0; i<=commentNum; i++){
+        HTML += `
+            <div class="list-group">
+            <a href="#" class="list-group-item list-group-item-action" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">${shopName[ran(shopName.length)]}</h5>
+                <small>${ran(50) + 1} days ago</small>
+            </div>
+            <p class="mb-1 text-start">Rating: ${parseInt(ratingAfterSearch) + ran(5 - ratingAfterSearch)}/5</p>
+            <p class="mb-1 text-start">${comments[ran(comments.length)]}</p>
+            </a>
+        </div>
+
+        `
+    }
+
+    commentBody.innerHTML = HTML
+
+    commentModal.show()
 }
