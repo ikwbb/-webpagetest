@@ -11,7 +11,7 @@ Promise.all([
 ]).then(startVideo)
 
 var MediaStream
-function startVideo() {
+/* function startVideo() {
   var navigator.getUserMedia = navigator.getUserMedia ||
 
   navigator.webkitGetUserMedia ||
@@ -27,6 +27,21 @@ function startVideo() {
       MediaStream = stream.getTracks()[0];
     },
     err => console.error(err)
+  )
+} */
+
+function startVideo(){
+  var constraints = {audio: false, video: {width: 720, height: 560}};
+
+  navigator.mediaDevices.getUserMedia(constraints).then(
+    function(mediaStream){
+      video.srcObject = mediaStream;
+      MediaStream = mediaStream
+    }
+  ).catch(
+    function(err){
+      console.log(`${err.name}:${err.message}`)
+    }
   )
 }
 
