@@ -263,8 +263,98 @@
                     </div>
           
                     <div id="productHunter" class="d-none">
+                      
                       <h1 class="h1 text-center mt-2">Beauty Products Filter</h1>
-                      <h1 class="h3 text-center mt-2">Developing...</h1>
+
+                      <h1 class="h5 mt-2">Products:</h1>
+                      <div class="d-flex flex-row flex-wrap">
+                        <div class="checkBox me-2 mb-2">
+                          <input type="checkbox" class="prodClass btn-check" id="prod_faceMask" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="prod_faceMask">
+                            Facial Mask</label><br>
+                        </div>
+
+                        <div class="checkBox me-2 mb-2">
+                          <input type="checkbox" class="prodClass btn-check" id="prod_cleanser" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="prod_cleanser">
+                            Cleanser</label><br>
+                        </div>
+                        
+                        <div class="checkBox me-2 mb-2">
+                          <input type="checkbox" class="prodClass btn-check" id="prod_moisturizer" autocomplete="off">
+                          <label class="btn btn-outline-primary" for="prod_moisturizer">
+                            Moisturizer</label><br>
+                        </div>
+
+                      </div>
+
+                      <h1 class="h5 mt-2">Rating:</h1>
+                      <label for="ratingBar" class="form-label" >At least <span id="prod_ratingLabel">5</span> stars or above</label>
+                      <input type="range" class="form-range" min="1" max="5" step="1" id="prod_ratingBar">
+                      
+
+                      <h1 class="h5 mt-2">Pricing:</h1>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+
+                            <div class="radio me-2 mb-2">
+                              <input type="radio" name="radio-pricing" class="prodPricingClass btn-check" id="prod_public" autocomplete="off">
+                              <label class="btn btn-outline-primary w-100" for="prod_public">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"></path>
+                                </svg><br>
+                                Public</label><br>
+                            </div>
+
+                          </div>
+
+                          <div class="col">
+                            <div class="radio me-2 mb-2">
+                              <input type="radio" name="radio-pricing" class="prodPricingClass btn-check" id="prod_medium" autocomplete="off">
+                              <label class="btn btn-outline-primary w-100" for="prod_medium">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"></path>
+                                </svg><br>
+                                Medium</label><br>
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="radio me-2 mb-2">
+                              <input type="radio" name="radio-pricing" class="prodPricingClass btn-check" id="prod_premium" autocomplete="off">
+                              <label class="btn btn-outline-primary w-100" for="prod_premium">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"></path>
+                                </svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gem" viewBox="0 0 16 16">
+                                  <path d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6l3-4zm11.386 3.785-1.806-2.41-.776 2.413 2.582-.003zm-3.633.004.961-2.989H4.186l.963 2.995 5.704-.006zM5.47 5.495 8 13.366l2.532-7.876-5.062.005zm-1.371-.999-.78-2.422-1.818 2.425 2.598-.003zM1.499 5.5l5.113 6.817-2.192-6.82L1.5 5.5zm7.889 6.817 5.123-6.83-2.928.002-2.195 6.828z"></path>
+                                </svg><br>
+                                Premium</label><br>
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <div class="row mt-3">
+                        <div class="col text-center">
+                          <button type="button" class="btn btn-success btn-lg" id="searchProdBtn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                            </svg>
+                            Search
+                          </button>
+                        </div>
+                      </div>
+
+
                     </div>
                   </div>
           

@@ -13,14 +13,18 @@ var skinStatusRec = document.getElementById("skinStatusRec")
 var skinTypeRec = document.getElementById("skinTypeRec")
 
 var Conditions = new Array("Well", "Good", "Fine", "Bad", "Average")
-var Status = new Array("Wet", "Dry", "Neutral")
+var Status = new Array("Wet", "Dry")//, "Neutral")
 var Types = new Array("Oil", "Neutral")
 
 var recConditions = new Array("Well", "Good", "Fine", "Bad", "Average") // Recommendations
 var recStatus = new Array("Use a facial mask to absorb additional water", "Use a Moisturizer to lock water", "Your skin is in a well condition! No additional skincare need to be done for this!")
-var recTypes = new Array("Use a cleanser to equalize your oil conditions", "Your skin type is in a well condition! No additional skincare need to be done for this!")
+var recTypes = new Array("Use a Cleanser to equalize your oil conditions", "Your skin type is in a well condition! No additional skincare need to be done for this!")
 
+var recStatusProd = new Array("Facial Mask", "Moisturizer")
+var recTypesProd = new Array("Cleanser")
 
+var statusNumSave = 0
+var typesNumSave = 0
 
 snap.onclick = () => {
     if(facialData){
@@ -79,5 +83,32 @@ function getAnalysis(){
     skinStatusRec.innerHTML = recStatus[statusNum]
     skinTypeRec.innerHTML = recTypes[typeNum]
 
+    typesNumSave = typeNum
+    statusNumSave = statusNum
 
+
+}
+
+
+function sendURL(){
+    var finalArgs = ""
+    var andFlag = false
+
+    if(statusNum <= recStatusProd.length -1){
+        finalArgs += recStatusProd[statusNum]
+        andFlag = true
+    }
+
+    if(typeNum <= recTypesProd.length -1){
+        if(andFlag == true)
+            finalArgs += "$$$"
+        finalArgs += recTypesProd[typeNum]
+    }
+
+    location.href = `../beautyhunter/index.html?args=${finalArgs}`
+}
+
+var learnMore = document.getElementById("learnMore")
+learnMore.onclick = () => {
+    sendURL()
 }

@@ -1,4 +1,5 @@
 const picNum = 11
+const picNumProd = 3
 
 ratingAfterSearch = 0;
 
@@ -37,13 +38,16 @@ window.addEventListener('load', ()=>{
     ratingBar.value = 5
     ratingLabel.innerHTML = ratingBar.value
 
-    
+    initProdRating()
+
+    getArgs()
 
 })
 
 /* var toggleFunc = () => {
     shopHunter.classList.toggle("d-none")
 } */
+findBP = document.getElementById("findBP")
 
 findBP.onclick = () => {
     shopHunter.classList.add("d-none")
@@ -239,11 +243,7 @@ searchBtn.onclick = () => {
 
     document.getElementsByClassName("accordion-button")[0].click()
 
-    window.scroll({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-      });
+    wscroll()
 }
 
 
@@ -288,4 +288,163 @@ function showComments(){
     commentBody.innerHTML = HTML
 
     commentModal.show()
+}
+
+
+// Products
+
+var products = document.getElementsByClassName("prodClass") 
+var prodRating = document.getElementById("prod_ratingBar") // Final Var
+var prodRatingLabel = document.getElementById("prod_ratingLabel")
+var prodPricing = document.getElementsByClassName("prodPricingClass")
+
+function initProdRating(){
+    prodRating.value = 5;
+}
+
+prodRating.ontouchmove = () => rangeChange(prodRatingLabel, prodRating)
+prodRating.onmousemove = () => rangeChange(prodRatingLabel, prodRating)
+
+
+function genProdResult(){
+    var prodPricingVal; // Final Var
+    for(i=0; i<prodPricing.length; i++){
+        if(prodPricing[i].checked == true){
+            prodPricingVal = document.querySelector(`label[for='${prodPricing[i].id}']`).innerText.trim()
+        }
+    }
+
+    var productsName = new Array(); // Final Var
+    for(i=0; i<products.length; i++){
+        if(products[i].checked == true){
+            var pendingPush = document.querySelector(`label[for='${products[i].id}']`).innerText.trim()
+            productsName.push(pendingPush)
+        }
+    }
+
+    var prodRatingVal = prodRating.value
+
+/*     console.log(prodPricingVal)
+    console.log(productsName)
+    console.log(prodRatingVal) */
+
+    if(prodPricingVal == undefined){
+        alert("Please at least select one pricing interval!")
+        return false
+    }
+
+    if(productsName.length == 0){
+        alert("Please at least select one product!")
+        return false
+    }
+
+    showProdResult(prodRatingVal, productsName, prodPricingVal)
+    return true
+
+}
+
+
+
+function showProdResult(rate, prod, price){
+    var allHTML = ""
+    var repeatNum = ran(3) + 1
+
+    for(i=0; i<repeatNum; i++){
+        rate1 = parseInt(rate) + ran(5 - rate)
+        name1 = shopName[ran(shopName.length)]
+        prod1 = prod[ran(prod.length)]
+        price1 = price
+        picdir1 = prod1
+        picnum1 = ran(3) + 1
+
+        allHTML += returnProdHTML(rate1, name1, prod1, price1, picdir1, picnum1)
+    }
+
+
+
+    genResultLabel()
+    results.innerHTML += allHTML
+}
+
+
+
+
+
+function returnProdHTML(rate1, name1, prod1, price1, picdir1, picnum1){
+    return  `
+    
+    <div class="row">
+    <div class="col">
+
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../beautyShopsImg/${picdir1}/${picnum1}.jpg" class="img-fluid rounded-start w-100" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title" id="shop-name">${name1} ${prod1}</h5>
+              <div class="card-text">
+                Rating: <span id="r-rating">${rate1}/5</span><br>
+                Pricing: <span id="r-pricing">${price1}</span><br>
+                <button type="button" class="btn btn-outline-secondary" onclick="showComments()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text" viewBox="0 0 16 16">
+                    <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                    <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                    Comments
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+    `;
+}
+
+
+var prodSearchBtn = document.getElementById("searchProdBtn")
+
+prodSearchBtn.onclick = ()=>{
+    if(genProdResult() != false){
+        document.getElementsByClassName("accordion-button")[0].click()
+        wscroll()
+    };
+}
+
+
+function wscroll(){
+    window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      });
+}
+
+function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
+
+function getArgs(){
+    var args = getQueryVariable("args")
+
+    var arr = args.split("$$$")
+
+    for(i=0; i<products.length; i++){
+        if(arr.includes(document.querySelector(`label[for='${products[i].id}']`).innerText.trim().replace(" ", "%20"))){
+            products[i].checked = true;
+            findBP.click()
+        }
+    }
 }

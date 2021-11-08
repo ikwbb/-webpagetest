@@ -19,14 +19,51 @@
             margin: 0;
         }
     </style>
+
+<script src="https://cdn.jsdelivr.net/npm/@honatas/multi-select-webcomponent/dist/multi-select-webcomponent.min.js" crossorigin="anonymous"></script>
+
+<script defer>
+    setTimeout(()=>{
+        window.customElements.define('multi-select', MultiselectWebcomponent);
+
+        const pluto = document.createElement('option');
+        pluto.value = 9;
+        pluto.innerHTML = 'Pluto';
+
+        const msw = document.getElementById('planetIds');
+        msw.options.push(pluto);
+        msw.build();
+
+    },1)
+</script>
+
 </head>
 <body>
     
-    <div class="greylayer">
-        <img src="./img/1.jpg" alt="" class="img">
-    </div>
-    
+    <div class="m-5">
+        <label for="planetId" class="form-label p-0">Planets</label>
+        <multi-select id="planetIds" class="border"
+          selecteditem="badge bg-primary pt-1 m-1"
+          dropdown="border"
+          dropdownitem="p-1"
+          selectallbutton="btn btn-sm btn-light"
+          selectallbuttonspan="bi-check2-all text-success"
+          clearbutton="btn btn-sm btn-light"
+          clearbuttonspan="bi-x-circle text-danger"
+          >
+          <option value="1">Mercury</option>
+          <option value="2">Venus</option>
+          <option value="3">Earth</option>
+          <option value="4">Mars</option>
+          <option value="5">Jupiter</option>
+          <option value="6">Saturn</option>
+          <option value="7">Uranus</option>
+          <option value="8">Neptune</option>
+        </multi-select>
+      </div>
 
 
 </body>
 </html>
+
+
