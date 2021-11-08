@@ -154,7 +154,7 @@ function genResult(){
     console.log(tprof)
     console.log(tpricing) */
 
-    showResult(tdistrict, ttime, tservices, trating, tprof, tpricing)
+    return showResult(tdistrict, ttime, tservices, trating, tprof, tpricing)
 }
 
 function showResult(dist2, time2, serv2, rating2, prof2, price2){
@@ -195,9 +195,9 @@ function showResult(dist2, time2, serv2, rating2, prof2, price2){
     </div>
   </div>
 
-    `
+    `;
 
-    results.innerHTML += HTML
+    return HTML;
 
     
 }
@@ -210,14 +210,23 @@ function ran(num){
 var searchBtn = document.getElementById("searchBtn")
 
 searchBtn.onclick = () => {
-    results.innerHTML = ""
+
+    var HTML2 = ""
+
 
     var repeat = ran(8)
     for(j=0; j<repeat; j++){
-        if(genResult() == false){
-            break
+        var generatedResult = genResult()
+        if(generatedResult == false){
+            return
+        } else {
+            HTML2 += generatedResult
         }
     }
+
+    genResultLabel()
+    results.innerHTML += HTML2
+
     document.getElementsByClassName("accordion-button")[0].click()
 
     window.scroll({
@@ -225,4 +234,19 @@ searchBtn.onclick = () => {
         left: 0,
         behavior: 'smooth'
       });
+}
+
+
+function genResultLabel(){
+    var resultLabel = `
+    <div class="row">
+        <div class="col">
+            <h1 class="h2">Results:</h1>
+        </div>
+    </div>   
+
+    `
+
+    results.innerHTML = resultLabel
+    
 }
