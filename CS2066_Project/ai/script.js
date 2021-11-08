@@ -12,6 +12,14 @@ Promise.all([
 
 var MediaStream
 function startVideo() {
+  var navigator.getUserMedia = navigator.getUserMedia ||
+
+  navigator.webkitGetUserMedia ||
+  
+  navigator.mozGetUserMedia ||
+  
+  navigator.msGetUserMedia;
+
   navigator.getUserMedia(
     { video: {} },
     stream => {
