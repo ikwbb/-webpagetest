@@ -371,6 +371,9 @@ function showProdResult(rate, prod, price){
 
 
 function returnProdHTML(rate1, name1, prod1, price1, picdir1, picnum1){
+
+    picdir1 = picdir1.toLowerCase()
+
     return  `
     
     <div class="row">
