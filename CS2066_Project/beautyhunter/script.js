@@ -338,6 +338,7 @@ function genProdResult(){
         return false
     }
 
+    ratingAfterSearch = parseInt(prodRatingVal)
     showProdResult(prodRatingVal, productsName, prodPricingVal)
     return true
 
