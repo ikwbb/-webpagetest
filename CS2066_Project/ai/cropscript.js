@@ -12,6 +12,11 @@ var skinType2 = document.getElementById("skinType2")
 var skinStatusRec = document.getElementById("skinStatusRec")
 var skinTypeRec = document.getElementById("skinTypeRec")
 
+var recBtnStatus = document.getElementById("recBtnStatus")
+var recBtnType = document.getElementById("recBtnType")
+
+var learnMoreType = document.getElementById("learnMoreType")
+
 var Conditions = new Array("Well", "Good", "Fine", "Bad", "Average")
 var Status = new Array("Wet", "Dry")//, "Neutral")
 var Types = new Array("Oil", "Neutral")
@@ -86,11 +91,18 @@ function getAnalysis(){
     typesNumSave = typeNum
     statusNumSave = statusNum
 
+    if(typeNum == 1)
+        learnMoreType.classList.add("d-none")
+    else
+        recBtnType.innerHTML = recTypesProd[typeNum]
+
+    recBtnStatus.innerHTML = recStatusProd[statusNum]
+
 
 }
 
 
-function sendURL(){
+/* function sendURL(){
     var finalArgs = ""
     var andFlag = false
 
@@ -106,9 +118,25 @@ function sendURL(){
     }
 
     location.href = `../beautyhunter/index.html?args=${finalArgs}`
+} */
+
+function sendURLStatus(){
+    finalArgs = recStatusProd[statusNum]
+    location.href = `../beautyhunter/index.html?args=${finalArgs}`
 }
 
-var learnMore = document.getElementById("learnMore")
-learnMore.onclick = () => {
-    sendURL()
+function sendURLType(){
+    finalArgs = recTypesProd[typeNum]
+    location.href = `../beautyhunter/index.html?args=${finalArgs}`
+}
+
+
+var learnMoreStatus = document.getElementById("learnMoreStatus")
+learnMoreStatus.onclick = () => {
+    sendURLStatus()
+}
+
+var learnMoreType = document.getElementById("learnMoreType")
+learnMoreType.onclick = () => {
+    sendURLType()
 }

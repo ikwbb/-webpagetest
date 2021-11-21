@@ -42,7 +42,7 @@
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-2">
     <div>
-      <h3 class="float-md-start mb-0">Half Mirror Full Error</h3>
+      <h3 class="float-md-start mb-0">Group 50 - Half Mirror Full Error</h3>
       <nav class="nav nav-masthead justify-content-center float-md-end">
         <a class="nav-link" aria-current="page" href="../index.html">Home</a>
         <a class="nav-link active" href="./">Ai Facial Scan</a>
@@ -94,7 +94,7 @@
 
         <div class="row">
           <div class="col">
-            <canvas class="border border-4 rounded" id="cropped"></canvas>
+            <canvas class="border border-4 rounded mw-100" id="cropped"></canvas>
   
           </div>
         </div>
@@ -102,7 +102,7 @@
         <div class="row">
           <div class="col">
             <div class="text-start facialData">
-              <div class="h-100 p-5 bg-light text-dark border rounded-3">
+              <div class="h-100 p-3 p-lg-5 bg-light text-dark border rounded-3">
 
                 <h2 class="h3">Your Facial Analysis:</h2>
                 <ul class="list-group">
@@ -122,14 +122,19 @@
 
                   <li class="list-group-item">
                     Aiming <span id="skinStatus2">Dry</span> Skin status:<br><span id="skinStatusRec"></span>
+                    <div>
+                  <button class="btn btn-outline-secondary" type="button" id="learnMoreStatus">Find suitable <span id="recBtnStatus"></span> products</button>
+                    </div>
                   </li>
                   <li class="list-group-item">
                     Aiming <span id="skinType2">Dry</span> Skin type:<br><span id="skinTypeRec"></span>
+                    <div>
+                      <button class="btn btn-outline-secondary" type="button" id="learnMoreType">Find suitable <span id="recBtnType"></span> products</button>
+                        </div>
                   </li>
                 </ul>
 
                 <div class="w-100 text-center my-2">
-                  <button class="btn btn-outline-secondary" type="button" id="learnMore">Learn more on Recommendations</button>
                 </div>
                 
               </div>
