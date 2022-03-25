@@ -14,21 +14,21 @@
             background-position: 0 0;
         }
         .pray-layer{
-            height: 100%;
             position: absolute;
-            right: 0;
+            height: 100%;
             width: 100%;
             display: flex;
-            justify-content: center;
-            align-items: end;
-            flex-direction: column;
-            margin-right: 5rem;
+            align-items: center;
+            justify-content: end;
+            -webkit-justify-content: flex-end;
+            
         }
         .pray{
+            padding-right: 2.5rem;
+            text-align: end;
             font-size: 3rem;
             text-shadow: 0 0 10px black;
             font-weight: lighter;
-            text-align: end;
             color: rgb(218, 218, 218);
             font-family: "Microsoft Yahei Light","Microsoft Yahei","PingFang SC","Helvetica Neue",Helvetica,Tahoma,Arial,sans-serif;
         }
@@ -41,12 +41,14 @@
     <div class="pray-layer">
         <div class="pray">
             <div class="pray-chi">
-                為MU5735號航班祈禱
+                為MU5735號航班乘客祈禱
             </div>
             <div class="pray-eng">
-                Pray for MU5735
+                Pray for MU5735 Passengers
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<script src="http://192.168.3.9:35729/livereload.js?ext=Chrome&amp;extver=2.1.0"></script>
