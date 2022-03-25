@@ -9,17 +9,20 @@
         body {
             margin: 0;
             padding: 0;
-            background-image: url("bkg-img.jpg");
+            background: url("bkg-img.jpg") left no-repeat fixed;
+            background-size: cover;
+            background-position: 0 0;
         }
         .pray-layer{
             height: 100%;
             position: absolute;
             right: 0;
-            width: 40%;
+            width: 100%;
             display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: end;
             flex-direction: column;
+            margin-right: 5rem;
         }
         .pray{
             font-size: 3rem;
