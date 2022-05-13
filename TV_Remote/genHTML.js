@@ -275,19 +275,16 @@ const bodyHTML = `
 `
 
 const headHTML = `
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>電視遙控器</title>
+<title>電視遙控器</title>
 `
 
 window.addEventListener('load', ()=>{
-    document.head.innerHTML = ""
-    document.body.innerHTML = ""
+    document.head.innerHTML += headHTML
+    document.body.innerHTML = bodyHTML 
 
     const stylesheet = document.createElement("style")
     stylesheet.innerHTML = css
     document.head.appendChild(stylesheet)
-
-    document.head.innerHTML += headHTML
-    document.body.innerHTML += bodyHTML 
 
     init()
 })
