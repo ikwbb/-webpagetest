@@ -300,6 +300,8 @@ function init(){
         chevronUp.classList.toggle("rotate180");
     })
 
+    setFavicons('https://ikwbb.github.io/TV_Remote/favicon');
+
     // document.body.addEventListener('click', (e)=>{
     //     e = e || window.event;  
     //     const src = e.path.find(item => {
@@ -334,4 +336,12 @@ function sendCMD(code, type, bits=void 0){
     fetch(url, {signal}).then(res => {
         controller.abort();
     })
+}
+
+function setFavicons(favImg){
+    let headTitle = document.querySelector('head');
+    let setFavicon = document.createElement('link');
+    setFavicon.setAttribute('rel','shortcut icon');
+    setFavicon.setAttribute('href',favImg);
+    headTitle.appendChild(setFavicon);
 }
