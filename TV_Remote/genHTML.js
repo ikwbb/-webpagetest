@@ -38,17 +38,17 @@ const bodyHTML = `
 
         <div class="channel-selecting-list">
             <div class="channel-selecting-list-inner">
-                <div class="channel-list-item" code="83" type="channel">83 無綫新聞台</div>
-                <div class="channel-list-item" code="81" type="channel">81 翡翠台</div>
-                <div class="channel-list-item" code="82" type="channel">82 J2台</div>
-                <div class="channel-list-item" code="31" type="channel">31 數碼港台電視</div>
-                <div class="channel-list-item" code="32" type="channel">32 數碼港台電視</div>
-                <div class="channel-list-item" code="33" type="channel">33 中央電視台綜合頻道</div>
-                <div class="channel-list-item" code="85" type="channel">85 無線財經資訊台</div>
-                <div class="channel-list-item" code="76" type="channel">76 香港國際財經台</div>
-                <div class="channel-list-item" code="77" type="channel">77 奇妙電視中文台</div>
-                <div class="channel-list-item" code="96" type="channel">96 ViuTVsix</div>
-                <div class="channel-list-item" code="99" type="channel">99 ViuTV</div>
+                <div class="channel-list-item" code="83" type="channel" onclick="sendCMDByObj(this)">83 無綫新聞台</div>
+                <div class="channel-list-item" code="81" type="channel" onclick="sendCMDByObj(this)">81 翡翠台</div>
+                <div class="channel-list-item" code="82" type="channel" onclick="sendCMDByObj(this)">82 J2台</div>
+                <div class="channel-list-item" code="31" type="channel" onclick="sendCMDByObj(this)">31 數碼港台電視</div>
+                <div class="channel-list-item" code="32" type="channel" onclick="sendCMDByObj(this)">32 數碼港台電視</div>
+                <div class="channel-list-item" code="33" type="channel" onclick="sendCMDByObj(this)">33 中央電視台綜合頻道</div>
+                <div class="channel-list-item" code="85" type="channel" onclick="sendCMDByObj(this)">85 無線財經資訊台</div>
+                <div class="channel-list-item" code="76" type="channel" onclick="sendCMDByObj(this)">76 香港國際財經台</div>
+                <div class="channel-list-item" code="77" type="channel" onclick="sendCMDByObj(this)">77 奇妙電視中文台</div>
+                <div class="channel-list-item" code="96" type="channel" onclick="sendCMDByObj(this)">96 ViuTVsix</div>
+                <div class="channel-list-item" code="99" type="channel" onclick="sendCMDByObj(this)">99 ViuTV</div>
             </div>
         </div>
     </div>
@@ -69,23 +69,23 @@ const bodyHTML = `
 
     <div class="SetTopBox-Btns">
         <div class="arrow-keys-box">
-            <div class="arrowBtn arrow-ok" type="nec" code="543023135"></div>
-            <div class="arrowBtn arrow-up" type="nec" code="543014975">
+            <div class="arrowBtn arrow-ok" type="nec" code="543023135" onclick="sendCMDByObj(this)"></div>
+            <div class="arrowBtn arrow-up" type="nec" code="543014975" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
                   </svg>
             </div>
-            <div class="arrowBtn arrow-right" type="nec" code="542988455">
+            <div class="arrowBtn arrow-right" type="nec" code="542988455" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
                   </svg>
             </div>
-            <div class="arrowBtn arrow-left" type="nec" code="542994575">
+            <div class="arrowBtn arrow-left" type="nec" code="542994575" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
                   </svg>
             </div>
-            <div class="arrowBtn arrow-down" type="nec" code="542982335">
+            <div class="arrowBtn arrow-down" type="nec" code="542982335" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
                   </svg>
@@ -94,12 +94,12 @@ const bodyHTML = `
 
         <div class="slide-key-box">
             <div class="volume-key slide-key">
-                <div class="left-slide-key" type="sony" code="3216">
+                <div class="left-slide-key" type="sony" code="3216" onclick="sendCMDByObj(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-down" viewBox="0 0 16 16">
                         <path d="M9 4a.5.5 0 0 0-.812-.39L5.825 5.5H3.5A.5.5 0 0 0 3 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 9 12V4zM6.312 6.39 8 5.04v5.92L6.312 9.61A.5.5 0 0 0 6 9.5H4v-3h2a.5.5 0 0 0 .312-.11zM12.025 8a4.486 4.486 0 0 1-1.318 3.182L10 10.475A3.489 3.489 0 0 0 11.025 8 3.49 3.49 0 0 0 10 5.525l.707-.707A4.486 4.486 0 0 1 12.025 8z"/>
                       </svg>
                 </div>
-                <div class="right-slide-key" type="sony" code="1168">
+                <div class="right-slide-key" type="sony" code="1168" onclick="sendCMDByObj(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
                         <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
                         <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
@@ -109,12 +109,12 @@ const bodyHTML = `
             </div>
 
             <div class="channel-key slide-key">
-                <div class="left-slide-key" type="nec" code="542982335">
+                <div class="left-slide-key" type="nec" code="542982335" onclick="sendCMDByObj(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-start" viewBox="0 0 16 16">
                         <path d="M4 4a.5.5 0 0 1 1 0v3.248l6.267-3.636c.52-.302 1.233.043 1.233.696v7.384c0 .653-.713.998-1.233.696L5 8.752V12a.5.5 0 0 1-1 0V4zm7.5.633L5.696 8l5.804 3.367V4.633z"/>
                       </svg>
                 </div>
-                <div class="right-slide-key" type="nec" code="543014975">
+                <div class="right-slide-key" type="nec" code="543014975" onclick="sendCMDByObj(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-skip-end" viewBox="0 0 16 16">
                         <path d="M12.5 4a.5.5 0 0 0-1 0v3.248L5.233 3.612C4.713 3.31 4 3.655 4 4.308v7.384c0 .653.713.998 1.233.696L11.5 8.752V12a.5.5 0 0 0 1 0V4zM5 4.633 10.804 8 5 11.367V4.633z"/>
                       </svg>
@@ -123,14 +123,14 @@ const bodyHTML = `
         </div>
     
         <div class="func-keys-box">
-            <div class="func-btns" type="sony" code="656">
+            <div class="func-btns" type="sony" code="656" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-mute" viewBox="0 0 16 16">
                     <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06zM6 5.04 4.312 6.39A.5.5 0 0 1 4 6.5H2v3h2a.5.5 0 0 1 .312.11L6 10.96V5.04zm7.854.606a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0z"/>
                   </svg>
                 <div class="func-fullname">靜音</div>
             </div>
 
-            <div class="func-btns" type="sony" code="2640">
+            <div class="func-btns" type="sony" code="2640" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cast" viewBox="0 0 16 16">
                     <path d="m7.646 9.354-3.792 3.792a.5.5 0 0 0 .353.854h7.586a.5.5 0 0 0 .354-.854L8.354 9.354a.5.5 0 0 0-.708 0z"/>
                     <path d="M11.414 11H14.5a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.5-.5h-13a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h3.086l-1 1H1.5A1.5 1.5 0 0 1 0 10.5v-7A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v7a1.5 1.5 0 0 1-1.5 1.5h-2.086l-1-1z"/>
@@ -138,7 +138,7 @@ const bodyHTML = `
                 <div class="func-fullname">輸入源</div>
             </div>
 
-            <div class="func-btns" type="nec" code="542967035">
+            <div class="func-btns" type="nec" code="542967035" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
                     <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
@@ -146,14 +146,14 @@ const bodyHTML = `
                 <div class="func-fullname">退出</div>
             </div>
 
-            <div class="func-btns" type="nec" code="542972135">
+            <div class="func-btns" type="nec" code="542972135" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-columns" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M0 .5A.5.5 0 0 1 .5 0h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 0 .5Zm13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-13 2A.5.5 0 0 1 .5 2h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-13 2A.5.5 0 0 1 .5 4h10a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5Zm13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-13 2A.5.5 0 0 1 .5 6h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-13 2A.5.5 0 0 1 .5 8h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-13 2a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5Zm13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-13 2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Zm-13 2a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5Zm13 0a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z"/>
                   </svg>
                 <div class="func-fullname">節目詳細</div>
             </div>
 
-            <div class="func-btns" type="nec" code="542983355">
+            <div class="func-btns" type="nec" code="542983355" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
                     <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
                     <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
@@ -161,7 +161,7 @@ const bodyHTML = `
                 <div class="func-fullname">設置菜單</div>
             </div>
 
-            <div class="func-btns" type="sony" code="2704">
+            <div class="func-btns" type="sony" code="2704" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
                     <path d="M7.5 1v7h1V1h-1z"/>
                     <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
@@ -169,7 +169,7 @@ const bodyHTML = `
                 <div class="func-fullname">電源</div>
             </div>
 
-            <div class="func-btns" type="nec" code="543017015">
+            <div class="func-btns" type="nec" code="543017015" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ear" viewBox="0 0 16 16">
                     <path d="M8.5 1A4.5 4.5 0 0 0 4 5.5v7.047a2.453 2.453 0 0 0 4.75.861l.512-1.363a5.553 5.553 0 0 1 .816-1.46l2.008-2.581A4.34 4.34 0 0 0 8.66 1H8.5ZM3 5.5A5.5 5.5 0 0 1 8.5 0h.16a5.34 5.34 0 0 1 4.215 8.618l-2.008 2.581a4.555 4.555 0 0 0-.67 1.197l-.51 1.363A3.453 3.453 0 0 1 3 12.547V5.5ZM8.5 4A1.5 1.5 0 0 0 7 5.5v2.695c.112-.06.223-.123.332-.192.327-.208.577-.44.72-.727a.5.5 0 1 1 .895.448c-.256.513-.673.865-1.079 1.123A8.538 8.538 0 0 1 7 9.313V11.5a.5.5 0 0 1-1 0v-6a2.5 2.5 0 0 1 5 0V6a.5.5 0 0 1-1 0v-.5A1.5 1.5 0 0 0 8.5 4Z"/>
                   </svg>
@@ -187,23 +187,23 @@ const bodyHTML = `
 
     <div class="TV-Btns">
         <div class="arrow-keys-box">
-            <div class="arrowBtn arrow-ok" type="sony" code="2672"></div>
-            <div class="arrowBtn arrow-up" type="sony" code="752">
+            <div class="arrowBtn arrow-ok" type="sony" code="2672" onclick="sendCMDByObj(this)"></div>
+            <div class="arrowBtn arrow-up" type="sony" code="752" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
                   </svg>
             </div>
-            <div class="arrowBtn arrow-right" type="sony" code="3280">
+            <div class="arrowBtn arrow-right" type="sony" code="3280" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
                   </svg>
             </div>
-            <div class="arrowBtn arrow-left" type="sony" code="720">
+            <div class="arrowBtn arrow-left" type="sony" code="720" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
                   </svg>
             </div>
-            <div class="arrowBtn arrow-down" type="sony" code="2800">
+            <div class="arrowBtn arrow-down" type="sony" code="2800" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
                   </svg>
@@ -212,12 +212,12 @@ const bodyHTML = `
 
         <div class="slide-key-box">
             <div class="volume-key slide-key">
-                <div class="left-slide-key" type="nec" code="542994575">
+                <div class="left-slide-key" type="nec" code="542994575" onclick="sendCMDByObj(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-down" viewBox="0 0 16 16">
                         <path d="M9 4a.5.5 0 0 0-.812-.39L5.825 5.5H3.5A.5.5 0 0 0 3 6v4a.5.5 0 0 0 .5.5h2.325l2.363 1.89A.5.5 0 0 0 9 12V4zM6.312 6.39 8 5.04v5.92L6.312 9.61A.5.5 0 0 0 6 9.5H4v-3h2a.5.5 0 0 0 .312-.11zM12.025 8a4.486 4.486 0 0 1-1.318 3.182L10 10.475A3.489 3.489 0 0 0 11.025 8 3.49 3.49 0 0 0 10 5.525l.707-.707A4.486 4.486 0 0 1 12.025 8z"/>
                       </svg>
                 </div>
-                <div class="right-slide-key" type="nec" code="542988455">
+                <div class="right-slide-key" type="nec" code="542988455" onclick="sendCMDByObj(this)">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up" viewBox="0 0 16 16">
                         <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
                         <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
@@ -229,7 +229,7 @@ const bodyHTML = `
         </div>
     
         <div class="func-keys-box">
-            <div class="func-btns" type="sony" code="1006" bits="15">
+            <div class="func-btns" type="sony" code="1006" bits="15" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-reels" viewBox="0 0 16 16">
                     <path d="M6 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM1 3a2 2 0 1 0 4 0 2 2 0 0 0-4 0z"/>
                     <path d="M9 6h.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 7.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 16H2a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h7zm6 8.73V7.27l-3.5 1.555v4.35l3.5 1.556zM1 8v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1z"/>
@@ -238,7 +238,7 @@ const bodyHTML = `
                   <div class="func-fullname">劇院模式</div>
             </div>
 
-            <div class="func-btns" type="sony" code="25321" bits="15">
+            <div class="func-btns" type="sony" code="25321" bits="15" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-left" viewBox="0 0 16 16">
                     <path fill-rule="evenodd" d="M6 12.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v2a.5.5 0 0 1-1 0v-2A1.5 1.5 0 0 1 6.5 2h8A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-8A1.5 1.5 0 0 1 5 12.5v-2a.5.5 0 0 1 1 0v2z"/>
                     <path fill-rule="evenodd" d="M.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L1.707 7.5H10.5a.5.5 0 0 1 0 1H1.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3z"/>
@@ -246,7 +246,7 @@ const bodyHTML = `
                 <div class="func-fullname">退出</div>
             </div>
 
-            <div class="func-btns" type="sony" code="112">
+            <div class="func-btns" type="sony" code="112" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear" viewBox="0 0 16 16">
                     <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z"/>
                     <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z"/>
@@ -254,7 +254,7 @@ const bodyHTML = `
                 <div class="func-fullname">設置菜單</div>
             </div>
 
-            <div class="func-btns" type="nec" code="542980295">
+            <div class="func-btns" type="nec" code="542980295" onclick="sendCMDByObj(this)">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-power" viewBox="0 0 16 16">
                     <path d="M7.5 1v7h1V1h-1z"/>
                     <path d="M3 8.812a4.999 4.999 0 0 1 2.578-4.375l-.485-.874A6 6 0 1 0 11 3.616l-.501.865A5 5 0 1 1 3 8.812z"/>
