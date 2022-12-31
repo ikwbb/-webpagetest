@@ -273,6 +273,7 @@ const bodyHTML = `
 
     <div class="footer"></div>
 `
+ 
 
 const headHTML = `
 <title>電視遙控器</title>
@@ -299,21 +300,30 @@ function init(){
         chevronUp.classList.toggle("rotate180");
     })
 
-    document.body.addEventListener('click', (e)=>{
-        e = e || window.event;  
-        const src = e.path.find(item => {
-            if(item.getAttribute('type') && item.getAttribute('code'))
-                return item
-        })
-        if(src) {
-            const type = src.getAttribute('type');
-            const code = src.getAttribute('code');
-            const bits = src.getAttribute('bits');
-            if(bits == void 0) sendCMD(code, type);
-            else sendCMD(code, type, bits);
+    // document.body.addEventListener('click', (e)=>{
+    //     e = e || window.event;  
+    //     const src = e.path.find(item => {
+    //         if(item.getAttribute('type') && item.getAttribute('code'))
+    //             return item
+    //     })
+    //     if(src) {
+    //         const type = src.getAttribute('type');
+    //         const code = src.getAttribute('code');
+    //         const bits = src.getAttribute('bits');
+    //         if(bits == void 0) sendCMD(code, type);
+    //         else sendCMD(code, type, bits);
 
-        }
-    })
+    //     }
+    // })
+}
+
+function sendCMDByObj(obj) {
+    const type = obj.getAttribute('type');
+    const code = obj.getAttribute('code');
+    const bits = obj.getAttribute('bits')
+    if(bits == void 0) sendCMD(code, type);
+    else sendCMD(code, type, bits);
+    console.log(`type: ${type}, code: ${code}, bits: ${bits}`);
 }
 
 function sendCMD(code, type, bits=void 0){
