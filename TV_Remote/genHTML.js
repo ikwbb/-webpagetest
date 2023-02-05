@@ -276,7 +276,8 @@ const bodyHTML = `
  
 
 const headHTML = `
-<title>電視遙控器</title>
+    <title>電視遙控器</title>
+    <link rel="apple-touch-icon" href="favicon" />
 `
 
 window.addEventListener('load', ()=>{
