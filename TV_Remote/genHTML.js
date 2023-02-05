@@ -277,7 +277,7 @@ const bodyHTML = `
 
 const headHTML = `
     <title>電視遙控器</title>
-    <link rel="apple-touch-icon" href="favicon" />
+    <link rel="apple-touch-icon" href="https://ikwbb.github.io/TV_Remote/favicon" />
 `
 
 window.addEventListener('load', ()=>{
