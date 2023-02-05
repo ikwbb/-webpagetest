@@ -298,28 +298,22 @@ function init(){
     const channelSelector = document.querySelector(".channel-selector")
     const channelBar = document.querySelector(".channel-activate-bar-box")
     const chevronUp = document.querySelector(".bi-chevron-up")
-    channelBar.addEventListener('click', ()=>{
+    const channelSelectorCloser = document.querySelector(".channel-selector-closer")
+
+    function toggleHideList() {
         channelSelector.classList.toggle("hide-list");
         chevronUp.classList.toggle("rotate180");
+        channelSelectorCloser.classList.toggle("closer-hidden");
+    }
+
+    channelBar.addEventListener('click', ()=>{
+        toggleHideList();
     })
 
-    setFavicons('https://ikwbb.github.io/TV_Remote/favicon');
+    channelSelectorCloser.addEventListener('click', ()=>{
+        toggleHideList();
+    })
 
-    // document.body.addEventListener('click', (e)=>{
-    //     e = e || window.event;  
-    //     const src = e.path.find(item => {
-    //         if(item.getAttribute('type') && item.getAttribute('code'))
-    //             return item
-    //     })
-    //     if(src) {
-    //         const type = src.getAttribute('type');
-    //         const code = src.getAttribute('code');
-    //         const bits = src.getAttribute('bits');
-    //         if(bits == void 0) sendCMD(code, type);
-    //         else sendCMD(code, type, bits);
-
-    //     }
-    // })
 }
 
 function sendCMDByObj(obj) {
