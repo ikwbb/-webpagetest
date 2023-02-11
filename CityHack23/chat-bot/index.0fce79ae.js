@@ -2949,7 +2949,7 @@ const App = ()=>{
         mybot.message.add({
             text: "Hello! How are you?"
         }).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             }))// .then(() => mybot.message.add({ text: "May we" }))
         // .then(() => mybot.wait({ waitTime: 500 }))
         .then(()=>mybot.action.set({
@@ -2974,11 +2974,11 @@ const App = ()=>{
             mybot.message.add({
                 text: feeling(data?.selected?.label)
             })).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             })).then(()=>mybot.message.add({
                 text: "And we want to know more about your mental health."
             })).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             })).then(()=>mybot.message.add({
                 text: "Are you ready?"
             })).then(()=>mybot.action.set({
@@ -2991,62 +2991,62 @@ const App = ()=>{
             }, {
                 actionType: "selectButtons"
             })).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             })).then(()=>mybot.message.add({
                 text: "Good! We may start now!"
             })).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             })).then(()=>mybot.message.add({
                 text: "You may answer the following questions based on your experience in past 2 weeks."
             })).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             })).then(()=>mybot.message.add({
                 text: "How often you have been bothered by little interest or pleasure in doing things?"
             })).then(()=>getRating()).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             })).then(()=>mybot.message.add({
                 text: "How often you have been feeling down, depressed or hopeless?"
             })).then(()=>getRating()).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             })).then(()=>mybot.message.add({
                 text: "How often you have been bothered by trouble falling or staying asleep, or sleeping too much?"
             })).then(()=>getRating()).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             })).then(()=>mybot.message.add({
                 text: "How often you have been feeling tired or having little energy?"
             })).then(()=>getRating()).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             })).then(()=>mybot.message.add({
                 text: "How often you have been bothered by poor appetite or overeating?"
             })).then(()=>getRating()).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             })).then(()=>mybot.message.add({
                 text: "How often you have been feeling bad about yourself, or that you are a failure or have let yourself or your family down?"
             })).then(()=>getRating()).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             })).then(()=>mybot.message.add({
                 text: "How often you have been bothered by trouble concentrating on things, such as reading the newspaper or watching television?"
             })).then(()=>getRating()).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             })).then(()=>mybot.message.add({
                 text: "How often you have been bothered by moving or speaking so slowly or so fidgety that other people could have noticed?"
             })).then(()=>getRating()).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             })).then(()=>mybot.message.add({
                 text: "How often you have been thinking that you would be better off dead, or of hurting yourself?"
             })).then(()=>getRating()).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             })).then(()=>mybot.message.add({
                 text: "OK! We have enough information about your mental health status now!"
             })).then(()=>mybot.wait({
-                waitTime: 1000
+                waitTime: 500
             })).then(async ()=>{
             if (markCount <= 4) {
                 await mybot.message.add({
                     text: "It seems that your mental status is good!"
                 });
                 await mybot.wait({
-                    waitTime: 1000
+                    waitTime: 500
                 });
                 await mybot.message.add({
                     text: "You are welcomed to visit our professtional mental guide for more mental improvements!"
@@ -3065,7 +3065,7 @@ const App = ()=>{
                     text: "It seems that you are having mild to moderate depression!"
                 });
                 await mybot.wait({
-                    waitTime: 1000
+                    waitTime: 500
                 });
                 await mybot.message.add({
                     text: "We recommend you to join our mental support group, where there are trained consultant, professional social workers to help you with your specific case."
@@ -3084,7 +3084,7 @@ const App = ()=>{
                     text: "It seems that you are having severe depression!"
                 });
                 await mybot.wait({
-                    waitTime: 1000
+                    waitTime: 500
                 });
                 await mybot.message.add({
                     text: "Your are highly recommended to join our focused mental support group, where we could provide one-to-one mental consultation to address your specific issue."
