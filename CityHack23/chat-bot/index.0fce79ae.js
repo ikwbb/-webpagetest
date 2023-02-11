@@ -3054,7 +3054,7 @@ const App = ()=>{
                 await mybot.message.add({
                     src: "https://assets-global.website-files.com/5e3d471e8cf47516ebfaf0fb/603525e5223a7222f0730915_Module_Blog_MentalHealthTips%20(1).png",
                     onClick: function() {
-                        window.location.href = "./mental-health-tips";
+                        window.location.href = "../mental-health-tips";
                     },
                     width: "200px"
                 }, {
@@ -3071,9 +3071,9 @@ const App = ()=>{
                     text: "We recommend you to join our mental support group, where there are trained consultant, professional social workers to help you with your specific case."
                 });
                 await mybot.message.add({
-                    src: "https://umanitoba.ca/sites/default/files/styles/3x2_900w/public/2022-02/individual-couple-counselling.jpg?itok=BJoophPy",
+                    src: "https://unusual.business/wp-content/uploads/2020/02/Unusual-Chat-with-us.png",
                     onClick: function() {
-                        window.location.href = "./mental-support-group";
+                        window.location.href = "../mental-support-group";
                     },
                     width: "200px"
                 }, {
@@ -3089,10 +3089,11 @@ const App = ()=>{
                 await mybot.message.add({
                     text: "Your are highly recommended to join our focused mental support group, where we could provide one-to-one mental consultation to address your specific issue."
                 });
-                await mybot.message.add({
-                    src: "https://umanitoba.ca/sites/default/files/styles/3x2_900w/public/2022-02/individual-couple-counselling.jpg?itok=BJoophPy",
+                await mybot.message.add(// https://umanitoba.ca/sites/default/files/styles/3x2_900w/public/2022-02/individual-couple-counselling.jpg?itok=BJoophPy
+                {
+                    src: "https://unusual.business/wp-content/uploads/2020/02/Unusual-Chat-with-us.png",
                     onClick: function() {
-                        window.location.href = "./focused-mental-support-group";
+                        window.location.href = "../focused-mental-support-group";
                     },
                     width: "200px"
                 }, {
@@ -3107,23 +3108,23 @@ const App = ()=>{
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react1.BotUIMessageList), {}, void 0, false, {
                     fileName: "src/javascript/index.js",
-                    lineNumber: 153,
+                    lineNumber: 154,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _react1.BotUIAction), {}, void 0, false, {
                     fileName: "src/javascript/index.js",
-                    lineNumber: 154,
+                    lineNumber: 155,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/javascript/index.js",
-            lineNumber: 152,
+            lineNumber: 153,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/javascript/index.js",
-        lineNumber: 151,
+        lineNumber: 152,
         columnNumber: 5
     }, undefined);
 };
@@ -3134,7 +3135,7 @@ if (containerElement) {
     const root = (0, _client.createRoot)(containerElement);
     root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
         fileName: "src/javascript/index.js",
-        lineNumber: 163,
+        lineNumber: 164,
         columnNumber: 15
     }, undefined));
 }
