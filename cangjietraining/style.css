@@ -1,0 +1,287 @@
+/*@font-face {
+    font-family: YouYuan;
+    src: url("../2019/font/SIMYOU.TTF") format("truetype");
+}*/
+@font-face {
+    font-family: Ink Free;
+    src: url("../2019/font/Inkfree.ttf") format("truetype");
+}
+
+.main{
+    margin: 0px;
+    border: solid 0px red;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    background-color: rgb(241,248,255);
+}
+.title{
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    background-color: #455A64;
+    color: white;
+    height: 60px;
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Ink Free, YouYuan;
+}
+
+.letter-box{
+    border: solid 3px #BDBDBD;
+    width: 172px;
+    margin: 0 auto;
+    height: 172px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 150px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.letter{
+    color: #f3f3f3;
+    font-family: YouYuan;
+}
+.dash{
+    border-top: dashed 1px #CFD8DC;
+    width: 500px;
+    position: absolute;
+}
+
+.dash1{
+    transform: rotate(45deg);
+}
+
+.dash2{
+    transform: rotate(90deg);
+}
+
+.dash3{
+    transform: rotate(135deg);
+}
+
+.letter{
+    z-index: 9999;
+}
+
+.input-box{
+    border: solid 0px red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+#input{
+    height: 40px;
+    font-size: 38px;
+    width: 200px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: solid 3px #b4bcc2;
+    background-color: inherit;
+    outline: none;
+    text-align: center;
+    color: #F3F3F3;
+    font-family: YouYuan;
+}
+
+#input:focus{
+    transition: border-bottom 0.2s;
+    transition-timing-function: ease;
+    border-bottom: solid 3px #0097A7;
+}
+
+#ans{
+    clip-path: inset(25px 0 30px 38px);
+    margin-top: -25px;
+    margin-left: -38px;
+    max-width: calc(100% + 38px);
+}
+
+.ans-pic{
+    border: solid 0px red;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.input-area{
+    background-color: #607D8B;
+    padding: 20px 0;
+    position: relative;
+}
+
+.ans-pic{
+    background-color: rgb(241,248,255);
+    margin: 0;
+    padding: 0;
+}
+
+
+.btns{
+    position: absolute;
+    border-radius: 100%;
+    background-color: #009688;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-family: Ink Free;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 23%);
+}
+
+
+.tips{
+    right: 30px;
+    bottom: 150px;
+}
+
+.back{
+    right: 30px;
+    bottom: 30px;    
+}
+
+.showAns{
+    right: 30px;
+    bottom: 90px;
+    font-size: 24px;
+}
+
+
+
+.tips-opened{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index:999999;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.tips-info{
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+    padding-right: 20px;
+}
+
+.solve-overflow{
+    overflow: hidden;
+    height: 80%;
+    width: 80%;
+    position: relative;
+    border-radius: 20px;
+    padding: 20px;
+    padding-right: 0;
+    padding-bottom: 0;
+    border: solid 3px #464a4d;
+    background-color: #FAFAFA;
+    transition: all 0.4s;
+    transition-timing-function: ease;
+    opacity: 0;
+    transform: scale(40%);
+}
+
+.tips-info::-webkit-scrollbar{
+    width: 2px;
+}
+
+.tips-info::-webkit-scrollbar-thumb{
+    width: 2px;
+    background-color: #464a4d;
+}
+
+.tips-title{
+    text-align: center;
+    font-size: 32px;
+    font-family: YouYuan;
+}
+
+.tips-main{
+    margin-top: 20px;
+    font-family: YouYuan;
+    position: relative;
+    height: 100%;
+}
+
+.close-btn{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-family: Ink Free;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+img[alt="www.000webhost.com"]{
+    display: none;
+}
+
+.difficulty-setting{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 40%;
+}
+
+.errorMsg{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -60px;
+    background-color: #FAFAFA;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 2px #707070;
+    transition: all 0.4s;
+    transition-timing-function: ease-in-out;
+    z-index: 999999999999999;
+    opacity: 0;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.cangjieCodePanel{
+    position: absolute;
+    border: solid 3px #464a4d;
+    border-left: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 152px;
+    width: calc(50% - 110px);
+    background-color: #F3F3F3;
+    padding: 10px 5px;
+    color: rgb(58, 58, 58);
+    transition: all 0.5s;
+    left: -100px;
+    opacity: 0;
+    max-width: 100px;
+}
+
+.panel-title{
+    background-color: #009688;
+    width: fit-content;
+    padding: 2px;
+    border-radius: 4px;
+    margin-bottom: 1px;
+    color: #F3F3F3;
+}
+
+#panel-cangjie-code{
+    margin-bottom: 15px;
+}
+
+.simplified-title{
+    margin-bottom: 10px;
+}

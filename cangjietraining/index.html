@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>倉頡練習</title>
+</head>
+<body>
+
+    <div class="tips-opened">
+        <div class="solve-overflow">
+            <div class="tips-info">
+            <div class="close-btn" id="close-btn">X</div>
+            <div class="tips-title">設置與幫助</div>
+            <div class="tips-main">
+                <div class="simplified-title"><input type="checkbox" name="simplified">使用簡體字(不支持圖像拆字)</div>
+
+                <div class="difficulty-title">設置練習所用的常用字頻序(越低越簡單)</div>
+                <div class="difficulty-setting">
+                    <div class="abox"><input type="checkbox" name="difficulty-checkbox">1-500</div>
+                    <div class="abox"><input type="checkbox" name="difficulty-checkbox">501-1000</div>
+                    <div class="abox"><input type="checkbox" name="difficulty-checkbox">1001-1500</div>
+                    <div class="abox"><input type="checkbox" name="difficulty-checkbox">1501-2000</div>
+                    <div class="abox"><input type="checkbox" name="difficulty-checkbox">2001-2500</div>
+                    <div class="abox"><input type="checkbox" name="difficulty-checkbox">2501-3000</div>
+                    <div class="abox"><input type="checkbox" name="difficulty-checkbox">3001-3500</div>
+                    <div class="abox"><input type="checkbox" name="difficulty-checkbox">3501-4000</div>
+                    <div class="abox"><input type="checkbox" name="difficulty-checkbox">4001-4500</div>
+                    <div class="abox"><input type="checkbox" name="difficulty-checkbox">4501-5000</div>
+                    <div class="abox"><input type="checkbox" name="difficulty-checkbox">5001-5500</div>
+                    <div class="abox"><input type="checkbox" name="difficulty-checkbox">5501-6000</div>
+                    <div class="abox"><input type="checkbox" name="difficulty-checkbox">6001-6500</div>
+                    <div class="abox"><input type="checkbox" name="difficulty-checkbox">6501-7000</div>
+                    <div class="abox"><input type="checkbox" name="difficulty-checkbox">7001-7072</div>
+                </div>
+                <ul>
+                    <li>點擊Enter或點擊Ans均可以獲取答案</li>
+                    <li>點擊<可以回到上一個字</li>
+                    <li>正確輸入顯示中的字後會自動跳轉到下一個詞</li>
+                    <li>本網頁使用了以下資料:
+                        <ul>
+                            <li><a href="http://input.foruto.com/cccls/cjzd.html">
+                                華通軟件</a></li>
+                            <li><a href="https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/faq.php?s=1">
+                                中文大學：常用字頻序表</a></li>
+                            <li><a href="https://github.com/staristic/BIG5-JSON">
+                                GitHub:staristic/BIG5-JSON</a></li>
+                            <li><a href="https://github.com/cheukyin699/cangjie-dictionary/blob/master/src/cangjie5.json">
+                                GitHub:cheukyin699/cangjie-dictionary</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="title">倉頡練習</div>
+    <div class="main">
+        <div class="input-area">
+
+            <div class="back btns"><</div>
+            <div class="tips btns">···</div>
+            <div class="showAns btns">Ans</div>
+
+            <div class="errorMsg">抱歉！沒有查到此字的圖形版倉頡字碼！</div>
+            <div class="cangjieCodePanel">
+                <div class="panel-title">倉頡字碼</div>
+                <div class="panel-code" id="panel-cangjie-code">人戈日口人<br>口水火土</div>
+                <div class="panel-title">英文碼</div>
+                <div class="panel-code" id="panel-eng-code">oiar<br>oaar</div>
+
+            </div>
+            
+            <div class="letter-box">
+                <div class="dash dash1"></div>
+                <div class="dash dash2"></div>
+                <div class="dash dash3"></div>
+                <div class="dash dash4"></div>
+                <div class="letter" id="letter"></div>
+            </div>
+
+            <div class="input-box">
+                <input type="text" id="input">
+            </div>
+        </div>
+
+        <div class="ans-pic">
+            <img alt="" id="ans">
+        </div>
+    </div>
+
+<script src="charToBIG5Code.js"></script>
+<script src="cangjie5.js"></script>
+<script src="cangjieToKeyboard.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
