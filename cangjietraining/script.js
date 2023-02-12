@@ -126,6 +126,7 @@ window.onload = function(){
     if(hasLocalStorage == false || localStorage.getItem("difficulty") == "000000000000000"){
         localStorage.setItem("difficulty", "100000000000000");
         localStorage.setItem("simplified", false);
+        theDifficulty = localStorage.getItem("difficulty");
     }
 
     //var theDifficulty = localStorage.getItem("difficulty");
