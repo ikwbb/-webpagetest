@@ -1,0 +1,114 @@
+<html>
+<head>
+<style>
+    img[alt="www.000webhost.com"]{
+            display:none;
+        }
+    .center{
+        text-align: center;
+    }
+    body{
+        background-color: black;
+    }
+    .white{
+        color: white;
+    }
+    #audio_id{
+        left: 0px;
+        min-width: 100%;
+    }
+    body{
+        margin: 0;
+    }
+</style>
+<meta charset="UTF-8">
+</head>
+
+<body>
+    <html>  
+        <body>  
+        <div class="center">
+        <video id="audio_id" controls autoplay loop>Your browser can't support HTML5 Audio</video>  
+        <br>
+        <input class="white" type="file" id="file" onchange="onInputFileChange()">
+        <span id="currentSpeed" class="white">當前速度:1x</span>
+        <button id="slow"><<0.1x</button>
+        <button id="fast">>>0.1x</button>
+        <button id="back5s"><5s</button>
+        <button id="go5s">>5s</button>
+        <button id="resize">適應熒幕</button>
+        </div>
+
+        <script>  
+        var video = document.getElementById("audio_id");
+        var currentSpeed = document.getElementById("currentSpeed");
+        var speed = 1;
+        var resizeBtn = document.getElementById("resize");
+
+        function onInputFileChange() {  
+           var file = document.getElementById('file').files[0];  
+           var url = URL.createObjectURL(file);  
+           //console.log(url);  
+           video.src = url;  
+           video.currentTime = 999999999;
+        }  
+        document.getElementById("slow").onclick = function(){
+            speed = speed - 0.1;
+            speed = Number(speed.toFixed(1));
+            video.playbackRate = speed;
+            currentSpeed.innerHTML = "當前速度:"+speed+"x";
+        }
+        document.getElementById("fast").onclick = function(){
+            speed = speed + 0.1;
+            speed = Number(speed.toFixed(1));
+            video.playbackRate = speed;
+            currentSpeed.innerHTML = "當前速度:"+speed+"x";
+        }
+        document.getElementById("go5s").onclick = function(){
+            video.currentTime+=5;
+        }
+         document.getElementById("back5s").onclick = function(){
+            video.currentTime-=5;
+        }
+
+        window.onload = function () {
+            //悬停
+            document.body.addEventListener("dragover", function (ev) {
+                ev.preventDefault();//取消事件的默认动作，防止浏览器打开文件
+            }, false);
+            
+            //松手
+            document.body.addEventListener("drop", function (ev) {
+                ev.preventDefault();//取消事件的默认动作。
+                var fileReader = new FileReader();
+                var file = ev.dataTransfer.files[0];
+                var url = URL.createObjectURL(file);  
+                video.src = url;  
+                video.currentTime = 999999999;
+                video.play();
+                /*fileReader.onload = function(){
+                    
+                }
+                fileReader.onerror = function(){
+                    alert("读取失败");
+                }
+                fileReader.readAsText(file) ;*/
+            }, false);
+ 
+        }
+
+        resizeBtn.onclick = function(){
+            if(video.style.width != "100%"){
+                resizeBtn.innerHTML = "使用原寬度";
+                video.style.width = "100%";
+            } else {
+                resizeBtn.innerHTML = "適應熒幕";
+                video.style.width = "auto";
+            }
+        }
+        </script>  
+        </body>  
+        </html> 
+
+</body>
+</html>
