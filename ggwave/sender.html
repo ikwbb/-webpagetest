@@ -1,0 +1,101 @@
+<html>
+<head>
+	<script type="text/javascript" src="./ggwave.js"></script>
+</head>
+
+<body>        
+	<textarea type="text" id="txData" ></textarea>
+	<button id="sendBtn">GO</button>
+	
+	<script>
+		// the ggwave module instance
+		window.AudioContext = window.AudioContext || window.webkitAudioContext;
+		var context = null;
+		var recorder = null;
+		var ggwave = null;
+		var parameters = null;
+		var instance = null;
+		
+		ggwave_factory().then(function(obj) {
+			ggwave = obj;
+		});
+		
+		var txData = document.getElementById("txData");
+		var sendBtn = document.getElementById("sendBtn");
+	
+		
+		function init() {
+			if (!context) {
+				context = new AudioContext({sampleRate: 48000});
+
+				parameters = ggwave.getDefaultParameters();
+				parameters.sampleRateInp = context.sampleRate;
+				parameters.sampleRateOut = context.sampleRate;
+				instance = ggwave.init(parameters);
+			}
+		}
+			
+		// helper function
+		function convertTypedArray(src, type) {
+			var buffer = new ArrayBuffer(src.byteLength);
+			var baseView = new src.constructor(buffer).set(src);
+			return new type(buffer);
+		}
+		
+		
+		function onSend(val) {
+			init();
+
+			// pause audio capture during transmission
+			// captureStop.click();
+
+			// generate audio waveform
+			var waveform = ggwave.encode(instance, val, ggwave.ProtocolId.GGWAVE_PROTOCOL_ULTRASOUND_FAST, 10)
+
+			// play audio
+			var buf = convertTypedArray(waveform, Float32Array);
+			var buffer = context.createBuffer(1, buf.length, context.sampleRate);
+			buffer.getChannelData(0).set(buf);
+			var source = context.createBufferSource();
+			source.buffer = buffer;
+			source.connect(context.destination);
+			source.start(0);
+		}
+		
+		class Splitter {
+			constructor(text, step) {
+				this.text = text;
+				this.step = step;
+				this.cur = 0;
+			};
+
+			getCurPage() { return parseInt(this.cur / this.step); };
+			getPageCnt() { return Math.ceil(this.text.length / this.step); };
+			goto(page)   { return this.cur = (page-1)*this.step; };
+			next()       { return this.cur += this.step; };
+			prev()       { return this.cur -= this.step; };
+			get()        { return this.text.slice(this.cur, this.cur+this.step); };
+			isEnd()      { return this.cur+this.step >= this.text.length-1; };
+			isStart()    { return this.cur == 0; };
+
+		};
+		
+		function recurSend(TextSplit) {
+			onSend(TextSplit.get());
+			if (!TextSplit.isEnd()) {
+				TextSplit.next();
+				setTimeout(()=>{recurSend(TextSplit);}, 18000);
+			}
+		}
+		
+		sendBtn.onclick = function () {
+			let TextSplit = new Splitter(txData.value, 130);
+			console.log(`${TextSplit.getPageCnt()} Pages are needed.`);
+			recurSend(TextSplit);
+		}
+		
+		
+			
+			
+	</script>
+</body>
