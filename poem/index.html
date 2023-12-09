@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一句古詩詞</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .poem {
+            border: 1px solid red;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .poem-item {
+            margin-top: 20px;
+            font-family: DFKai-SB, Microsoft YaHei UI;
+        }
+
+        .poem-top {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .poem-classification {
+            color: lightgrey;
+            font-size: 1.2em;
+        }
+
+        .poem-top {
+            font-size: 2rem;
+        }
+
+        .poem-body {
+            font-size: 3rem;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="poem">
+        <div class="poem-top">
+            <div class="poem-item poem-author">請稍等片刻</div>
+            <div class="poem-item">&nbsp;--&nbsp;《</div>
+            <div class="poem-item poem-title">加載中</div>
+            <div class="poem-item">》</div>
+        </div>
+        <div class="poem-item poem-body"></div>
+        <div class="poem-item poem-classification"></div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            fetch("https://v1.jinrishici.com/all.json").then(response => {
+                if (!response.ok) {
+                    throw new Error("Network Response was not OK");
+                }
+                return response.json()
+            }).then(data => {
+                document.querySelector(".poem-title").innerText = data.origin;
+                document.querySelector(".poem-author").innerText = data.author;
+                document.querySelector(".poem-body").innerText = data.content;
+                document.querySelector(".poem-classification").innerText = data.category;
+            }).catch(error => {
+                console.error(error);
+            });
+        }
+    </script>
+</body>
+</html>
