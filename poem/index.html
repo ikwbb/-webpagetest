@@ -46,6 +46,7 @@
 
 
     </style>
+    <script src="https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/dist/umd/cn2t.js"></script> 
 </head>
 <body>
     <div class="poem">
@@ -67,10 +68,11 @@
                 }
                 return response.json()
             }).then(data => {
-                document.querySelector(".poem-title").innerText = data.origin;
-                document.querySelector(".poem-author").innerText = data.author;
-                document.querySelector(".poem-body").innerText = data.content;
-                document.querySelector(".poem-classification").innerText = data.category;
+                const converter = OpenCC.Converter({ from: 'cn', to: 'hk' });
+                document.querySelector(".poem-title").innerText = converter(data.origin);
+                document.querySelector(".poem-author").innerText = converter(data.author);
+                document.querySelector(".poem-body").innerText = converter(data.content);
+                document.querySelector(".poem-classification").innerText = converter(data.category);
             }).catch(error => {
                 console.error(error);
             });
