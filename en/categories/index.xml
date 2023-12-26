@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on ikwbb&#39;s Blog</title>
+        <link>https://www.bthc2020.cyou/en/categories/</link>
+        <description>Recent content in Categories on ikwbb&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-UK</language>
+        <copyright>ikwbb</copyright>
+        <lastBuildDate>Wed, 27 Dec 2023 00:38:40 +0800</lastBuildDate><atom:link href="https://www.bthc2020.cyou/en/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Testing</title>
+        <link>https://www.bthc2020.cyou/en/categories/testing/</link>
+        <pubDate>Wed, 27 Dec 2023 00:38:40 +0800</pubDate>
+        
+        <guid>https://www.bthc2020.cyou/en/categories/testing/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>
