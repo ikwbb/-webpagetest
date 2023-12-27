@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.bthc2020.cyou/zh-hk/p/again-too-many-things-wanted-to-do./</loc>
-    <lastmod>2023-12-28T03:06:39+08:00</lastmod>
-  </url><url>
     <loc>https://www.bthc2020.cyou/zh-hk/categories/</loc>
-    <lastmod>2023-12-28T03:06:39+08:00</lastmod>
+    <lastmod>2023-12-27T00:38:40+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-UK"
@@ -16,51 +13,6 @@
                 rel="alternate"
                 hreflang="zh-HK"
                 href="https://www.bthc2020.cyou/zh-hk/categories/"
-                />
-  </url><url>
-    <loc>https://www.bthc2020.cyou/zh-hk/tags/day-in-a-pic/</loc>
-    <lastmod>2023-12-28T03:06:39+08:00</lastmod>
-  </url><url>
-    <loc>https://www.bthc2020.cyou/zh-hk/categories/diary/</loc>
-    <lastmod>2023-12-28T03:06:39+08:00</lastmod>
-  </url><url>
-    <loc>https://www.bthc2020.cyou/zh-hk/</loc>
-    <lastmod>2023-12-28T03:06:39+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-UK"
-                href="https://www.bthc2020.cyou/en/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-HK"
-                href="https://www.bthc2020.cyou/zh-hk/"
-                />
-  </url><url>
-    <loc>https://www.bthc2020.cyou/zh-hk/post/</loc>
-    <lastmod>2023-12-28T03:06:39+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-UK"
-                href="https://www.bthc2020.cyou/en/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-HK"
-                href="https://www.bthc2020.cyou/zh-hk/post/"
-                />
-  </url><url>
-    <loc>https://www.bthc2020.cyou/zh-hk/tags/</loc>
-    <lastmod>2023-12-28T03:06:39+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-UK"
-                href="https://www.bthc2020.cyou/en/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-HK"
-                href="https://www.bthc2020.cyou/zh-hk/tags/"
                 />
   </url><url>
     <loc>https://www.bthc2020.cyou/zh-hk/tags/helloworld/</loc>
@@ -87,6 +39,45 @@
                 rel="alternate"
                 hreflang="zh-HK"
                 href="https://www.bthc2020.cyou/zh-hk/p/helloworld/"
+                />
+  </url><url>
+    <loc>https://www.bthc2020.cyou/zh-hk/</loc>
+    <lastmod>2023-12-27T00:38:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://www.bthc2020.cyou/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-HK"
+                href="https://www.bthc2020.cyou/zh-hk/"
+                />
+  </url><url>
+    <loc>https://www.bthc2020.cyou/zh-hk/post/</loc>
+    <lastmod>2023-12-27T00:38:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://www.bthc2020.cyou/en/post/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-HK"
+                href="https://www.bthc2020.cyou/zh-hk/post/"
+                />
+  </url><url>
+    <loc>https://www.bthc2020.cyou/zh-hk/tags/</loc>
+    <lastmod>2023-12-27T00:38:40+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://www.bthc2020.cyou/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-HK"
+                href="https://www.bthc2020.cyou/zh-hk/tags/"
                 />
   </url><url>
     <loc>https://www.bthc2020.cyou/zh-hk/categories/%E6%B8%AC%E8%A9%A6/</loc>
