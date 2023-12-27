@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on ikwbb的博客</title>
-        <link>https://www.bthc2020.cyou/zh-hk/post/</link>
-        <description>Recent content in Posts on ikwbb的博客</description>
+        <title>Diary on ikwbb的博客</title>
+        <link>https://www.bthc2020.cyou/zh-hk/categories/diary/</link>
+        <description>Recent content in Diary on ikwbb的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-HK</language>
         <copyright>ikwbb</copyright>
-        <lastBuildDate>Thu, 28 Dec 2023 03:06:39 +0800</lastBuildDate><atom:link href="https://www.bthc2020.cyou/zh-hk/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Thu, 28 Dec 2023 03:06:39 +0800</lastBuildDate><atom:link href="https://www.bthc2020.cyou/zh-hk/categories/diary/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Again, too many things wanted to do.</title>
         <link>https://www.bthc2020.cyou/zh-hk/p/again-too-many-things-wanted-to-do./</link>
         <pubDate>Thu, 28 Dec 2023 03:06:39 +0800</pubDate>
@@ -29,30 +29,6 @@
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;The things I want to do is always overwhelming the time I have. I gradually afraid to do those things, eventually falling into the chaos of pursuing short-term happiness.&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Helloworld</title>
-        <link>https://www.bthc2020.cyou/zh-hk/p/helloworld/</link>
-        <pubDate>Wed, 27 Dec 2023 00:38:40 +0800</pubDate>
-        
-        <guid>https://www.bthc2020.cyou/zh-hk/p/helloworld/</guid>
-        <description>&lt;img src="https://www.bthc2020.cyou/zh-hk/p/helloworld/image1.png" alt="Featured image of post Helloworld" /&gt;&lt;h1 id=&#34;嗨&#34;&gt;嗨！&lt;/h1&gt;
-&lt;p&gt;歡迎來到我的博客！這是我的第一篇博文，僅作爲測試文章之用&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/zh-hk/p/helloworld/image1.png&#34;
-	width=&#34;1024&#34;
-	height=&#34;1024&#34;
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;花海&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;100&#34;
-		data-flex-basis=&#34;240px&#34;
-	
-&gt;&lt;/p&gt;
 </description>
         </item>
         
