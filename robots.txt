@@ -1,0 +1,6 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://www.bthc2020.cyou/sitemap.xml
+Sitemap: https://www.bthc2020.cyou/en/sitemap.xml
+Sitemap: https://www.bthc2020.cyou/zh-hk/sitemap.xml
