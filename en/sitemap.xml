@@ -2,11 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.bthc2020.cyou/en/p/again-too-many-things-wanted-to-do/</loc>
-    <lastmod>2023-12-28T03:06:39+08:00</lastmod>
-  </url><url>
     <loc>https://www.bthc2020.cyou/en/categories/</loc>
-    <lastmod>2023-12-28T03:06:39+08:00</lastmod>
+    <lastmod>2023-12-28T22:20:55+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-HK"
@@ -19,13 +16,19 @@
                 />
   </url><url>
     <loc>https://www.bthc2020.cyou/en/tags/day-in-a-pic/</loc>
-    <lastmod>2023-12-28T03:06:39+08:00</lastmod>
+    <lastmod>2023-12-28T22:20:55+08:00</lastmod>
+  </url><url>
+    <loc>https://www.bthc2020.cyou/en/diary/</loc>
+    <lastmod>2023-12-28T22:20:55+08:00</lastmod>
   </url><url>
     <loc>https://www.bthc2020.cyou/en/categories/diary/</loc>
-    <lastmod>2023-12-28T03:06:39+08:00</lastmod>
+    <lastmod>2023-12-28T22:20:55+08:00</lastmod>
+  </url><url>
+    <loc>https://www.bthc2020.cyou/en/diary/20231229-pic/</loc>
+    <lastmod>2023-12-28T22:20:55+08:00</lastmod>
   </url><url>
     <loc>https://www.bthc2020.cyou/en/</loc>
-    <lastmod>2023-12-28T03:06:39+08:00</lastmod>
+    <lastmod>2023-12-28T22:20:55+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-HK"
@@ -36,6 +39,22 @@
                 hreflang="en-UK"
                 href="https://www.bthc2020.cyou/en/"
                 />
+  </url><url>
+    <loc>https://www.bthc2020.cyou/en/tags/</loc>
+    <lastmod>2023-12-28T22:20:55+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-HK"
+                href="https://www.bthc2020.cyou/zh-hk/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://www.bthc2020.cyou/en/tags/"
+                />
+  </url><url>
+    <loc>https://www.bthc2020.cyou/en/p/again-too-many-things-wanted-to-do/</loc>
+    <lastmod>2023-12-28T03:06:39+08:00</lastmod>
   </url><url>
     <loc>https://www.bthc2020.cyou/en/post/</loc>
     <lastmod>2023-12-28T03:06:39+08:00</lastmod>
@@ -48,19 +67,6 @@
                 rel="alternate"
                 hreflang="en-UK"
                 href="https://www.bthc2020.cyou/en/post/"
-                />
-  </url><url>
-    <loc>https://www.bthc2020.cyou/en/tags/</loc>
-    <lastmod>2023-12-28T03:06:39+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-HK"
-                href="https://www.bthc2020.cyou/zh-hk/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-UK"
-                href="https://www.bthc2020.cyou/en/tags/"
                 />
   </url><url>
     <loc>https://www.bthc2020.cyou/en/tags/helloworld/</loc>
