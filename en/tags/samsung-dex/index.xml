@@ -116,8 +116,8 @@ If the service has successfully started, the &amp;ldquo;Shizuku is running&amp;r
 		data-flex-grow=&#34;207&#34;
 		data-flex-basis=&#34;497px&#34;
 	
-&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://play.google.com/store/apps/details?id=com.termux&amp;amp;hl=en&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://play.google.com/store/apps/details?id=com.termux&amp;amp;hl=en&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Termux on Play Store&lt;/a&gt;&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://f-droid.org/packages/com.termux/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Termux on F-Droid (Recommended)&lt;/a&gt;&lt;/p&gt;

@@ -116,8 +116,8 @@
 		data-flex-grow=&#34;207&#34;
 		data-flex-basis=&#34;497px&#34;
 	
-&gt;
-&lt;a class=&#34;link&#34; href=&#34;https://play.google.com/store/apps/details?id=com.termux&amp;amp;hl=en&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://play.google.com/store/apps/details?id=com.termux&amp;amp;hl=en&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;Play 商店上的 Termux&lt;/a&gt;&lt;br&gt;
 &lt;a class=&#34;link&#34; href=&#34;https://f-droid.org/packages/com.termux/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;F-Droid 上的 Termux（推薦）&lt;/a&gt;&lt;/p&gt;
