@@ -41,19 +41,6 @@
                 href="https://www.bthc2020.cyou/en/coding/"
                 />
   </url><url>
-    <loc>https://www.bthc2020.cyou/en/coding/dex-customize-resolution/</loc>
-    <lastmod>2023-12-29T19:17:43+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-HK"
-                href="https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-UK"
-                href="https://www.bthc2020.cyou/en/coding/dex-customize-resolution/"
-                />
-  </url><url>
     <loc>https://www.bthc2020.cyou/en/</loc>
     <lastmod>2023-12-29T19:17:43+08:00</lastmod>
     <xhtml:link
@@ -78,6 +65,19 @@
                 rel="alternate"
                 hreflang="en-UK"
                 href="https://www.bthc2020.cyou/en/tags/samsung-dex/"
+                />
+  </url><url>
+    <loc>https://www.bthc2020.cyou/en/coding/dex-customize-resolution/</loc>
+    <lastmod>2023-12-29T19:17:43+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-HK"
+                href="https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://www.bthc2020.cyou/en/coding/dex-customize-resolution/"
                 />
   </url><url>
     <loc>https://www.bthc2020.cyou/en/tags/</loc>

@@ -8,12 +8,12 @@
         <language>en-UK</language>
         <copyright>ikwbb</copyright>
         <lastBuildDate>Fri, 29 Dec 2023 19:17:43 +0800</lastBuildDate><atom:link href="https://www.bthc2020.cyou/en/coding/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>Dex Screen Resolution Customization</title>
+        <title>Samsung Dex Screen Resolution Customization</title>
         <link>https://www.bthc2020.cyou/en/coding/dex-customize-resolution/</link>
         <pubDate>Fri, 29 Dec 2023 19:17:43 +0800</pubDate>
         
         <guid>https://www.bthc2020.cyou/en/coding/dex-customize-resolution/</guid>
-        <description>&lt;img src="https://www.bthc2020.cyou/en/coding/dex-customize-resolution/Samsung_Dex.png" alt="Featured image of post Dex Screen Resolution Customization" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+        <description>&lt;img src="https://www.bthc2020.cyou/en/coding/dex-customize-resolution/Samsung_Dex.png" alt="Featured image of post Samsung Dex Screen Resolution Customization" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Samsung Dex is perfect, as long as you don&amp;rsquo;t plug it into an &amp;ldquo;unsupported&amp;rdquo; monitor.&lt;/p&gt;
 &lt;p&gt;It was not a big problem initially, until the first time I brought it to my workplace &amp;ndash; where a 4:3 1280x1024 monitor is provided.
 I tried to connect my Samsung Phone to the monitor as usual. However, it failed to detect the 4:3 aspect ratio monitor.&lt;/p&gt;
