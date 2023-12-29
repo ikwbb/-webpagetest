@@ -173,8 +173,8 @@ Navigate to the folder where you have exported the script files previously by us
 &lt;p&gt;If you are using Android 14+, or you are not sure what operating system version are you using, you should do the following steps:&lt;/p&gt;
 &lt;p&gt;Enter the folder where you placed the rish and rish_shizuku.dex files and execute the following command:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod -w rish_shizuku.dex
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is basically a command for changing the permission for this file, in order to make the file to be executable on Android 14. Upon successful command execution, nothing should be prompted.&lt;/p&gt;
-&lt;h2 id=&#34;prepare-a-script-for-changing-the-resolution&#34;&gt;Prepare a script for changing the resolution&lt;/h2&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is basically a command for changing the permission for this file to make the file to be executable on Android 14. Upon successful command execution, nothing should be prompted.&lt;/p&gt;
+&lt;h2 id=&#34;preparing-a-script-for-changing-the-resolution&#34;&gt;Preparing a script for changing the resolution&lt;/h2&gt;
 &lt;p&gt;In the same folder where you place the rish and rish_shizuku.dex, execute the following command:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;sh ./rish -c &amp;#39;wm size 1280x1024 -d 2&amp;#39;&amp;#34;&lt;/span&gt; &amp;gt; ./change_resolution.sh
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;breakdown-of-the-command&#34;&gt;Breakdown of the command&lt;/h4&gt;
@@ -182,11 +182,43 @@ Navigate to the folder where you have exported the script files previously by us
 &lt;p&gt;Call the Shizuku service and execute the &amp;lsquo;some ADB shell command&amp;rsquo;&lt;/p&gt;
 &lt;h5 id=&#34;wm-size-1280x1024--d-2&#34;&gt;wm size 1280x1024 -d 2&lt;/h5&gt;
 &lt;p&gt;Call the Android Window Manager to change the size of the screen with the number 2, which is the external screen you have connected to. The target resolution is 1280x1024, where 1280 is the width with 1280 pixels and 1024 is the height with 1024 pixels.&lt;/p&gt;
-&lt;p&gt;Remark: This command is tested on a Samsung Galaxy S23 series without an external screen. If you are using the Samsung Fold series, you probably need to change the -d 2 to another number (maybe -d 3 or -d 4).&lt;/p&gt;
+&lt;h4 id=&#34;remark-for-the-samsung-galaxy-fold-users&#34;&gt;Remark for the Samsung Galaxy Fold users&lt;/h4&gt;
+&lt;p&gt;Remark: This command is tested on a Samsung Galaxy S23 series without a second screen. If you are using the Samsung Fold series, you probably need to change the -d 2 to another number (maybe -d 3 or -d 4).&lt;/p&gt;
 &lt;h2 id=&#34;execute-the-command-for-changing-the-screen-resolution&#34;&gt;Execute the command for changing the screen resolution&lt;/h2&gt;
 &lt;p&gt;Now, execute the script we have prepared by typing the following command and pressing enter.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./change_resolution.sh
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, the screen resolution should be changed to 1280x1024.&lt;/p&gt;
+&lt;h2 id=&#34;additional-tips&#34;&gt;Additional Tips&lt;/h2&gt;
+&lt;h3 id=&#34;command-auto-completion&#34;&gt;Command Auto-Completion&lt;/h3&gt;
+&lt;p&gt;To avoid typing such a long command, you may use the auto-complete function provided by the terminal.&lt;/p&gt;
+&lt;p&gt;For example, after typing &amp;ldquo;./cha&amp;rdquo;, you may tap the &amp;ldquo;Tab&amp;rdquo; button (circled in red) to auto-complete the following part of the command.
+&lt;img src=&#34;https://www.bthc2020.cyou/en/coding/dex-customize-resolution/Tab.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;1371&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;78&#34;
+		data-flex-basis=&#34;189px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;h3 id=&#34;wireless-debugging-shortcut&#34;&gt;Wireless Debugging Shortcut&lt;/h3&gt;
+&lt;p&gt;The wireless shortcut will be disabled when you shut down the phone. Therefore, every time you boot the phone, you need to enable the Wireless Debugging again.&lt;/p&gt;
+&lt;p&gt;It sounds tedious. However, you can put the &amp;ldquo;Wireless Debugging&amp;rdquo; shortcut in the notification panel to speed up the opening of wireless debugging.
+&lt;img src=&#34;https://www.bthc2020.cyou/en/coding/dex-customize-resolution/Notification_Panel.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;2043&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;52&#34;
+		data-flex-basis=&#34;126px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
