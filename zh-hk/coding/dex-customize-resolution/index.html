@@ -509,27 +509,19 @@ if (!doNotTrack) {
 >
 使用 cd 命令導航到你之前匯出腳本文件的文件夾。</p>
 <h4 id="終端操作的基本命令">終端操作的基本命令</h4>
-<p>例如，要進入 Shizuku 文件夾，你應該輸入：
-@@@shell
-cd Shizuku
-@@@</p>
-<p>然後，要列出當前文件夾中的現有文件，你應該輸入：
-@@@shell
-ls
-@@@</p>
-<h4 id="android-14-用戶的額外步驟">Android 14+ 用戶的額外步驟</h4>
+<p>例如，要進入 Shizuku 文件夾，你應該輸入：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">cd</span> Shizuku
+</span></span></code></pre></div><p>然後，要列出當前文件夾中的現有文件，你應該輸入：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">ls
+</span></span></code></pre></div><h4 id="android-14-用戶的額外步驟">Android 14+ 用戶的額外步驟</h4>
 <p>如果你正在使用 Android 14+，或者你不確定你使用的是哪個操作系統版本，你應該執行以下步驟：</p>
-<p>進入你放置 rish 和 rish_shizuku.dex 文件的文件夾，並執行以下命令：
-@@@shell
-chmod -w rish_shizuku.dex
-@@@
-這基本上是一個用於改變此文件權限的命令，以使該文件在 Android 14 上可執行。執行成功後不應該有任何提示。</p>
+<p>進入你放置 rish 和 rish_shizuku.dex 文件的文件夾，並執行以下命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">chmod -w rish_shizuku.dex
+</span></span></code></pre></div><p>這基本上是一個用於改變此文件權限的命令，以使該文件在 Android 14 上可執行。執行成功後不應該有任何提示。</p>
 <h2 id="準備一個用於更改分辨率的腳本">準備一個用於更改分辨率的腳本</h2>
-<p>在你放置 rish 和 rish_shizuku.dex 文件的同一個文件夾中，執行以下命令：
-@@@shell
-echo &ldquo;sh ./rish -c &lsquo;wm size 1280x1024 -d 2&rsquo;&rdquo; &gt; ./change_resolution.sh
-@@@</p>
-<h4 id="命令的分解">命令的分解</h4>
+<p>在你放置 rish 和 rish_shizuku.dex 文件的同一個文件夾中，執行以下命令：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl"><span class="nb">echo</span> <span class="s2">&#34;sh ./rish -c &#39;wm size 1280x1024 -d 2&#39;&#34;</span> &gt; ./change_resolution.sh
+</span></span></code></pre></div><h4 id="命令的分解">命令的分解</h4>
 <h5 id="sh-rish--c-某個-adb-shell-命令">sh ./rish -c &lsquo;某個 ADB shell 命令&rsquo;</h5>
 <p>調用 Shizuku 服務並執行“某個 ADB shell 命令”</p>
 <h5 id="wm-size-1280x1024--d-2">wm size 1280x1024 -d 2</h5>
@@ -537,11 +529,9 @@ echo &ldquo;sh ./rish -c &lsquo;wm size 1280x1024 -d 2&rsquo;&rdquo; &gt; ./chan
 <h4 id="三星-galaxy-fold-用戶的備註">三星 Galaxy Fold 用戶的備註</h4>
 <p>備註：這個命令在沒有第二屏幕的三星 Galaxy S23 系列上經過測試。如果你使用的是 Samsung Fold 系列，你可能需要將 -d 2 更改為其他數字（也許是 -d 3 或 -d 4）。</p>
 <h2 id="執行更改屏幕分辨率的命令">執行更改屏幕分辨率的命令</h2>
-<p>現在，通過輸入以下命令並按回車鍵，執行我們準備好的腳本。
-@@@shell
-./change_resolution.sh
-@@@</p>
-<p>現在，屏幕分辨率應該已經更改為 1280x1024。</p>
+<p>現在，通過輸入以下命令並按回車鍵，執行我們準備好的腳本。</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">./change_resolution.sh
+</span></span></code></pre></div><p>現在，屏幕分辨率應該已經更改為 1280x1024。</p>
 <h2 id="附加提示">附加提示</h2>
 <h3 id="命令自動完成">命令自動完成</h3>
 <p>為了避免輸入如此長的命令，你可以使用終端提供的自動完成功能。</p>

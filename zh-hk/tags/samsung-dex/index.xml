@@ -165,27 +165,19 @@
 &gt;
 使用 cd 命令導航到你之前匯出腳本文件的文件夾。&lt;/p&gt;
 &lt;h4 id=&#34;終端操作的基本命令&#34;&gt;終端操作的基本命令&lt;/h4&gt;
-&lt;p&gt;例如，要進入 Shizuku 文件夾，你應該輸入：
-@@@shell
-cd Shizuku
-@@@&lt;/p&gt;
-&lt;p&gt;然後，要列出當前文件夾中的現有文件，你應該輸入：
-@@@shell
-ls
-@@@&lt;/p&gt;
-&lt;h4 id=&#34;android-14-用戶的額外步驟&#34;&gt;Android 14+ 用戶的額外步驟&lt;/h4&gt;
+&lt;p&gt;例如，要進入 Shizuku 文件夾，你應該輸入：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; Shizuku
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;然後，要列出當前文件夾中的現有文件，你應該輸入：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ls
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;android-14-用戶的額外步驟&#34;&gt;Android 14+ 用戶的額外步驟&lt;/h4&gt;
 &lt;p&gt;如果你正在使用 Android 14+，或者你不確定你使用的是哪個操作系統版本，你應該執行以下步驟：&lt;/p&gt;
-&lt;p&gt;進入你放置 rish 和 rish_shizuku.dex 文件的文件夾，並執行以下命令：
-@@@shell
-chmod -w rish_shizuku.dex
-@@@
-這基本上是一個用於改變此文件權限的命令，以使該文件在 Android 14 上可執行。執行成功後不應該有任何提示。&lt;/p&gt;
+&lt;p&gt;進入你放置 rish 和 rish_shizuku.dex 文件的文件夾，並執行以下命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;chmod -w rish_shizuku.dex
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;這基本上是一個用於改變此文件權限的命令，以使該文件在 Android 14 上可執行。執行成功後不應該有任何提示。&lt;/p&gt;
 &lt;h2 id=&#34;準備一個用於更改分辨率的腳本&#34;&gt;準備一個用於更改分辨率的腳本&lt;/h2&gt;
-&lt;p&gt;在你放置 rish 和 rish_shizuku.dex 文件的同一個文件夾中，執行以下命令：
-@@@shell
-echo &amp;ldquo;sh ./rish -c &amp;lsquo;wm size 1280x1024 -d 2&amp;rsquo;&amp;rdquo; &amp;gt; ./change_resolution.sh
-@@@&lt;/p&gt;
-&lt;h4 id=&#34;命令的分解&#34;&gt;命令的分解&lt;/h4&gt;
+&lt;p&gt;在你放置 rish 和 rish_shizuku.dex 文件的同一個文件夾中，執行以下命令：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;echo&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;sh ./rish -c &amp;#39;wm size 1280x1024 -d 2&amp;#39;&amp;#34;&lt;/span&gt; &amp;gt; ./change_resolution.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;命令的分解&#34;&gt;命令的分解&lt;/h4&gt;
 &lt;h5 id=&#34;sh-rish--c-某個-adb-shell-命令&#34;&gt;sh ./rish -c &amp;lsquo;某個 ADB shell 命令&amp;rsquo;&lt;/h5&gt;
 &lt;p&gt;調用 Shizuku 服務並執行“某個 ADB shell 命令”&lt;/p&gt;
 &lt;h5 id=&#34;wm-size-1280x1024--d-2&#34;&gt;wm size 1280x1024 -d 2&lt;/h5&gt;
@@ -193,11 +185,9 @@ echo &amp;ldquo;sh ./rish -c &amp;lsquo;wm size 1280x1024 -d 2&amp;rsquo;&amp;rd
 &lt;h4 id=&#34;三星-galaxy-fold-用戶的備註&#34;&gt;三星 Galaxy Fold 用戶的備註&lt;/h4&gt;
 &lt;p&gt;備註：這個命令在沒有第二屏幕的三星 Galaxy S23 系列上經過測試。如果你使用的是 Samsung Fold 系列，你可能需要將 -d 2 更改為其他數字（也許是 -d 3 或 -d 4）。&lt;/p&gt;
 &lt;h2 id=&#34;執行更改屏幕分辨率的命令&#34;&gt;執行更改屏幕分辨率的命令&lt;/h2&gt;
-&lt;p&gt;現在，通過輸入以下命令並按回車鍵，執行我們準備好的腳本。
-@@@shell
-./change_resolution.sh
-@@@&lt;/p&gt;
-&lt;p&gt;現在，屏幕分辨率應該已經更改為 1280x1024。&lt;/p&gt;
+&lt;p&gt;現在，通過輸入以下命令並按回車鍵，執行我們準備好的腳本。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./change_resolution.sh
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;現在，屏幕分辨率應該已經更改為 1280x1024。&lt;/p&gt;
 &lt;h2 id=&#34;附加提示&#34;&gt;附加提示&lt;/h2&gt;
 &lt;h3 id=&#34;命令自動完成&#34;&gt;命令自動完成&lt;/h3&gt;
 &lt;p&gt;為了避免輸入如此長的命令，你可以使用終端提供的自動完成功能。&lt;/p&gt;
