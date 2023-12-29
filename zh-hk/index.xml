@@ -204,8 +204,21 @@
 		data-flex-basis=&#34;189px&#34;
 	
 &gt;&lt;/p&gt;
-&lt;h3 id=&#34;無線偵錯快捷方式&#34;&gt;無線偵錯快捷方式&lt;/h3&gt;
-&lt;p&gt;當你關閉手機時，無線快捷方式將被禁用。因此，每次啟動手&lt;/p&gt;
+&lt;h3 id=&#34;無線調試快捷方式&#34;&gt;無線調試快捷方式&lt;/h3&gt;
+&lt;p&gt;當你關閉手機時，無線快捷方式將被禁用。因此，每次啟動手機時，你都需要重新啟用無線調試。&lt;/p&gt;
+&lt;p&gt;這聽起來有點麻煩。然而，你可以將「無線調試」快捷方式放在通知欄中，加快打開無線調試的速度。
+&lt;img src=&#34;https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/Notification_Panel.jpg&#34;
+	width=&#34;1080&#34;
+	height=&#34;2043&#34;
+	
+	loading=&#34;lazy&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;52&#34;
+		data-flex-basis=&#34;126px&#34;
+	
+&gt;&lt;/p&gt;
 </description>
         </item>
         <item>
