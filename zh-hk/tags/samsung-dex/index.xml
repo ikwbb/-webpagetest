@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>ikwbb的博客</title>
-        <link>https://www.bthc2020.cyou/zh-hk/</link>
-        <description>Recent content on ikwbb的博客</description>
+        <title>Samsung Dex on ikwbb的博客</title>
+        <link>https://www.bthc2020.cyou/zh-hk/tags/samsung-dex/</link>
+        <description>Recent content in Samsung Dex on ikwbb的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-HK</language>
         <copyright>ikwbb</copyright>
-        <lastBuildDate>Fri, 29 Dec 2023 19:17:43 +0800</lastBuildDate><atom:link href="https://www.bthc2020.cyou/zh-hk/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 29 Dec 2023 19:17:43 +0800</lastBuildDate><atom:link href="https://www.bthc2020.cyou/zh-hk/tags/samsung-dex/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Samsung Dex 熒幕解析度自定義</title>
         <link>https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/</link>
         <pubDate>Fri, 29 Dec 2023 19:17:43 +0800</pubDate>
@@ -216,30 +216,6 @@ echo &amp;ldquo;sh ./rish -c &amp;lsquo;wm size 1280x1024 -d 2&amp;rsquo;&amp;rd
 &gt;&lt;/p&gt;
 &lt;h3 id=&#34;無線偵錯快捷方式&#34;&gt;無線偵錯快捷方式&lt;/h3&gt;
 &lt;p&gt;當你關閉手機時，無線快捷方式將被禁用。因此，每次啟動手&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>Helloworld</title>
-        <link>https://www.bthc2020.cyou/zh-hk/p/helloworld/</link>
-        <pubDate>Wed, 27 Dec 2023 00:38:40 +0800</pubDate>
-        
-        <guid>https://www.bthc2020.cyou/zh-hk/p/helloworld/</guid>
-        <description>&lt;img src="https://www.bthc2020.cyou/zh-hk/p/helloworld/image1.png" alt="Featured image of post Helloworld" /&gt;&lt;h1 id=&#34;嗨&#34;&gt;嗨！&lt;/h1&gt;
-&lt;p&gt;歡迎來到我的博客！這是我的第一篇博文，僅作爲測試文章之用&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/zh-hk/p/helloworld/image1.png&#34;
-	width=&#34;1024&#34;
-	height=&#34;1024&#34;
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;花海&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;100&#34;
-		data-flex-basis=&#34;240px&#34;
-	
-&gt;&lt;/p&gt;
 </description>
         </item>
         
