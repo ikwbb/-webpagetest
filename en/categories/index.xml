@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Categories on ikwbb&#39;s Blog</title>
-        <link>https://www.bthc2020.cyou/en/categories/</link>
+        <link>https://ikwbb.github.io/en/categories/</link>
         <description>Recent content in Categories on ikwbb&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-UK</language>
         <copyright>ikwbb</copyright>
-        <lastBuildDate>Fri, 29 Dec 2023 19:17:43 +0800</lastBuildDate><atom:link href="https://www.bthc2020.cyou/en/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 29 Dec 2023 19:17:43 +0800</lastBuildDate><atom:link href="https://ikwbb.github.io/en/categories/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Coding</title>
-        <link>https://www.bthc2020.cyou/en/categories/coding/</link>
+        <link>https://ikwbb.github.io/en/categories/coding/</link>
         <pubDate>Fri, 29 Dec 2023 19:17:43 +0800</pubDate>
         
-        <guid>https://www.bthc2020.cyou/en/categories/coding/</guid>
+        <guid>https://ikwbb.github.io/en/categories/coding/</guid>
         <description></description>
         </item>
         <item>
         <title>Diary</title>
-        <link>https://www.bthc2020.cyou/en/categories/diary/</link>
+        <link>https://ikwbb.github.io/en/categories/diary/</link>
         <pubDate>Thu, 28 Dec 2023 22:20:55 +0800</pubDate>
         
-        <guid>https://www.bthc2020.cyou/en/categories/diary/</guid>
+        <guid>https://ikwbb.github.io/en/categories/diary/</guid>
         <description></description>
         </item>
         <item>
         <title>Testing</title>
-        <link>https://www.bthc2020.cyou/en/categories/testing/</link>
+        <link>https://ikwbb.github.io/en/categories/testing/</link>
         <pubDate>Wed, 27 Dec 2023 00:38:40 +0800</pubDate>
         
-        <guid>https://www.bthc2020.cyou/en/categories/testing/</guid>
+        <guid>https://ikwbb.github.io/en/categories/testing/</guid>
         <description></description>
         </item>
         

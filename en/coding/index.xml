@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Codings on ikwbb&#39;s Blog</title>
-        <link>https://www.bthc2020.cyou/en/coding/</link>
+        <link>https://ikwbb.github.io/en/coding/</link>
         <description>Recent content in Codings on ikwbb&#39;s Blog</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-UK</language>
         <copyright>ikwbb</copyright>
-        <lastBuildDate>Fri, 29 Dec 2023 19:17:43 +0800</lastBuildDate><atom:link href="https://www.bthc2020.cyou/en/coding/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 29 Dec 2023 19:17:43 +0800</lastBuildDate><atom:link href="https://ikwbb.github.io/en/coding/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Samsung Dex Screen Resolution Customization</title>
-        <link>https://www.bthc2020.cyou/en/coding/dex-customize-resolution/</link>
+        <link>https://ikwbb.github.io/en/coding/dex-customize-resolution/</link>
         <pubDate>Fri, 29 Dec 2023 19:17:43 +0800</pubDate>
         
-        <guid>https://www.bthc2020.cyou/en/coding/dex-customize-resolution/</guid>
-        <description>&lt;img src="https://www.bthc2020.cyou/en/coding/dex-customize-resolution/Samsung_Dex.png" alt="Featured image of post Samsung Dex Screen Resolution Customization" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+        <guid>https://ikwbb.github.io/en/coding/dex-customize-resolution/</guid>
+        <description>&lt;img src="https://ikwbb.github.io/en/coding/dex-customize-resolution/Samsung_Dex.png" alt="Featured image of post Samsung Dex Screen Resolution Customization" /&gt;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
 &lt;p&gt;Samsung Dex is perfect, as long as you don&amp;rsquo;t plug it into an &amp;ldquo;unsupported&amp;rdquo; monitor.&lt;/p&gt;
 &lt;p&gt;It was not a big problem initially, until the first time I brought it to my workplace &amp;ndash; where a 4:3 1280x1024 monitor is provided.
 I tried to connect my Samsung Phone to the monitor as usual. However, it failed to detect the 4:3 aspect ratio monitor.&lt;/p&gt;
@@ -27,7 +27,7 @@ I tried to connect my Samsung Phone to the monitor as usual. However, it failed 
 &lt;/ul&gt;
 &lt;h2 id=&#34;steps&#34;&gt;Steps&lt;/h2&gt;
 &lt;h3 id=&#34;enable-the-developer-options&#34;&gt;Enable the Developer Options&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/en/coding/dex-customize-resolution/Enabling_Dev.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/en/coding/dex-customize-resolution/Enabling_Dev.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;1468&#34;
 	
@@ -44,7 +44,7 @@ I tried to connect my Samsung Phone to the monitor as usual. However, it failed 
 Enter the &amp;ldquo;Software Information&amp;rdquo; section under the &amp;ldquo;About Phone&amp;rdquo; in the Settings, then tap the &amp;ldquo;Build Number&amp;rdquo; 7 times.&lt;/p&gt;
 &lt;p&gt;After that, a prompt will be shown to notify you that you have become a Developer.&lt;/p&gt;
 &lt;h3 id=&#34;enable-adb-debugging&#34;&gt;Enable ADB Debugging&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/en/coding/dex-customize-resolution/Developer_Setting.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/en/coding/dex-customize-resolution/Developer_Setting.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;2340&#34;
 	
@@ -60,7 +60,7 @@ Enter the &amp;ldquo;Software Information&amp;rdquo; section under the &amp;ldqu
 &gt;
 Enter &amp;ldquo;Developer Options&amp;rdquo; and turn on the items highlighted by the red boxes.&lt;/p&gt;
 &lt;h3 id=&#34;install-shizuku&#34;&gt;Install Shizuku&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/en/coding/dex-customize-resolution/Shizuku.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/en/coding/dex-customize-resolution/Shizuku.png&#34;
 	width=&#34;588&#34;
 	height=&#34;131&#34;
 	
@@ -78,7 +78,7 @@ Enter &amp;ldquo;Developer Options&amp;rdquo; and turn on the items highlighted 
     &gt;Shizuku on Play Store&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Shizuku is an app for you to directly call the System&amp;rsquo;s API on your phone, which allows you to modify the screen resolution settings on your phone.&lt;/p&gt;
 &lt;h3 id=&#34;start-shizuku&#34;&gt;Start Shizuku&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/en/coding/dex-customize-resolution/Shizuku_stopped.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/en/coding/dex-customize-resolution/Shizuku_stopped.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;1488&#34;
 	
@@ -91,7 +91,7 @@ Enter &amp;ldquo;Developer Options&amp;rdquo; and turn on the items highlighted 
 	
 &gt;
 Click &amp;ldquo;Start&amp;rdquo; to start the Shizuku Service. Make sure that you have turned on the Wireless Debugging.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/en/coding/dex-customize-resolution/Shizuku_running.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/en/coding/dex-customize-resolution/Shizuku_running.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;2340&#34;
 	
@@ -105,7 +105,7 @@ Click &amp;ldquo;Start&amp;rdquo; to start the Shizuku Service. Make sure that y
 &gt;
 If the service has successfully started, the &amp;ldquo;Shizuku is running&amp;rdquo; will be shown.&lt;/p&gt;
 &lt;h2 id=&#34;install-termux&#34;&gt;Install Termux&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/en/coding/dex-customize-resolution/Termux.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/en/coding/dex-customize-resolution/Termux.png&#34;
 	width=&#34;483&#34;
 	height=&#34;233&#34;
 	
@@ -124,7 +124,7 @@ If the service has successfully started, the &amp;ldquo;Shizuku is running&amp;r
 &lt;p&gt;Termux is an Android Terminal Emulator, which allows you to run shell commands on your phone. It is recommended to install it from F-Droid since the application version is higher on F-Droid than compared to the Play Store.&lt;/p&gt;
 &lt;h2 id=&#34;use-shizuku-in-termux&#34;&gt;Use Shizuku in Termux&lt;/h2&gt;
 &lt;p&gt;Go back to Shizuku. Click on &amp;ldquo;Use Shizuku in terminal apps&amp;rdquo;, which will bring you to the following screen.
-&lt;img src=&#34;https://www.bthc2020.cyou/en/coding/dex-customize-resolution/Shizuku_export.jpg&#34;
+&lt;img src=&#34;https://ikwbb.github.io/en/coding/dex-customize-resolution/Shizuku_export.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;2340&#34;
 	
@@ -138,7 +138,7 @@ If the service has successfully started, the &amp;ldquo;Shizuku is running&amp;r
 &gt;&lt;/p&gt;
 &lt;p&gt;Now, click &amp;ldquo;Export files&amp;rdquo; and export the script files to Termux, by clicking the &amp;ldquo;Show roots&amp;rdquo; on the top left corner and followed by clicking Termux.&lt;/p&gt;
 &lt;p&gt;You may also create a folder and place the script files there (I created a folder called &amp;ldquo;Shizuku&amp;rdquo; and I placed all the scripts there).
-&lt;img src=&#34;https://www.bthc2020.cyou/en/coding/dex-customize-resolution/export.jpg&#34;
+&lt;img src=&#34;https://ikwbb.github.io/en/coding/dex-customize-resolution/export.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;727&#34;
 	
@@ -151,7 +151,7 @@ If the service has successfully started, the &amp;ldquo;Shizuku is running&amp;r
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;setting-up-shizuku-rish-in-termux&#34;&gt;Setting Up Shizuku (rish) in Termux&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/en/coding/dex-customize-resolution/Termux.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/en/coding/dex-customize-resolution/Termux.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;1091&#34;
 	
@@ -192,7 +192,7 @@ Navigate to the folder where you have exported the script files previously by us
 &lt;h3 id=&#34;command-auto-completion&#34;&gt;Command Auto-Completion&lt;/h3&gt;
 &lt;p&gt;To avoid typing such a long command, you may use the auto-complete function provided by the terminal.&lt;/p&gt;
 &lt;p&gt;For example, after typing &amp;ldquo;./cha&amp;rdquo;, you may tap the &amp;ldquo;Tab&amp;rdquo; button (circled in red) to auto-complete the following part of the command.
-&lt;img src=&#34;https://www.bthc2020.cyou/en/coding/dex-customize-resolution/Tab.jpg&#34;
+&lt;img src=&#34;https://ikwbb.github.io/en/coding/dex-customize-resolution/Tab.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;1371&#34;
 	
@@ -207,7 +207,7 @@ Navigate to the folder where you have exported the script files previously by us
 &lt;h3 id=&#34;wireless-debugging-shortcut&#34;&gt;Wireless Debugging Shortcut&lt;/h3&gt;
 &lt;p&gt;The wireless shortcut will be disabled when you shut down the phone. Therefore, every time you boot the phone, you need to enable the Wireless Debugging again.&lt;/p&gt;
 &lt;p&gt;It sounds tedious. However, you can put the &amp;ldquo;Wireless Debugging&amp;rdquo; shortcut in the notification panel to speed up the opening of wireless debugging.
-&lt;img src=&#34;https://www.bthc2020.cyou/en/coding/dex-customize-resolution/Notification_Panel.jpg&#34;
+&lt;img src=&#34;https://ikwbb.github.io/en/coding/dex-customize-resolution/Notification_Panel.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;2043&#34;
 	

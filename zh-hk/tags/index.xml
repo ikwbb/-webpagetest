@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Tags on ikwbb的博客</title>
-        <link>https://www.bthc2020.cyou/zh-hk/tags/</link>
+        <link>https://ikwbb.github.io/zh-hk/tags/</link>
         <description>Recent content in Tags on ikwbb的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-HK</language>
         <copyright>ikwbb</copyright>
-        <lastBuildDate>Fri, 29 Dec 2023 19:17:43 +0800</lastBuildDate><atom:link href="https://www.bthc2020.cyou/zh-hk/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 29 Dec 2023 19:17:43 +0800</lastBuildDate><atom:link href="https://ikwbb.github.io/zh-hk/tags/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Samsung Dex</title>
-        <link>https://www.bthc2020.cyou/zh-hk/tags/samsung-dex/</link>
+        <link>https://ikwbb.github.io/zh-hk/tags/samsung-dex/</link>
         <pubDate>Fri, 29 Dec 2023 19:17:43 +0800</pubDate>
         
-        <guid>https://www.bthc2020.cyou/zh-hk/tags/samsung-dex/</guid>
+        <guid>https://ikwbb.github.io/zh-hk/tags/samsung-dex/</guid>
         <description></description>
         </item>
         <item>
         <title>helloworld</title>
-        <link>https://www.bthc2020.cyou/zh-hk/tags/helloworld/</link>
+        <link>https://ikwbb.github.io/zh-hk/tags/helloworld/</link>
         <pubDate>Wed, 27 Dec 2023 00:38:40 +0800</pubDate>
         
-        <guid>https://www.bthc2020.cyou/zh-hk/tags/helloworld/</guid>
+        <guid>https://ikwbb.github.io/zh-hk/tags/helloworld/</guid>
         <description></description>
         </item>
         

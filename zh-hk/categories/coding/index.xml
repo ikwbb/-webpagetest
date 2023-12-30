@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Coding on ikwbb的博客</title>
-        <link>https://www.bthc2020.cyou/zh-hk/categories/coding/</link>
+        <link>https://ikwbb.github.io/zh-hk/categories/coding/</link>
         <description>Recent content in Coding on ikwbb的博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-HK</language>
         <copyright>ikwbb</copyright>
-        <lastBuildDate>Fri, 29 Dec 2023 19:17:43 +0800</lastBuildDate><atom:link href="https://www.bthc2020.cyou/zh-hk/categories/coding/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 29 Dec 2023 19:17:43 +0800</lastBuildDate><atom:link href="https://ikwbb.github.io/zh-hk/categories/coding/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>Samsung Dex 熒幕解析度自定義</title>
-        <link>https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/</link>
+        <link>https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/</link>
         <pubDate>Fri, 29 Dec 2023 19:17:43 +0800</pubDate>
         
-        <guid>https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/</guid>
-        <description>&lt;img src="https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/Samsung_Dex.png" alt="Featured image of post Samsung Dex 熒幕解析度自定義" /&gt;&lt;h2 id=&#34;介紹&#34;&gt;介紹&lt;/h2&gt;
+        <guid>https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/</guid>
+        <description>&lt;img src="https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/Samsung_Dex.png" alt="Featured image of post Samsung Dex 熒幕解析度自定義" /&gt;&lt;h2 id=&#34;介紹&#34;&gt;介紹&lt;/h2&gt;
 &lt;p&gt;在连接至“不支援”的顯示器時，Samsung Dex 可能會出現問題，但只要不將其連接到這樣的顯示器上，它仍然非常完美。&lt;/p&gt;
 &lt;p&gt;起初這並不是一個大問題，直到我第一次將它帶到我的工作場所——那裡提供了一個 4:3 1280x1024 的顯示器。
 我嘗試像往常一樣將我的三星手機連接到顯示器上。然而，它無法檢測到 4:3 寬高比的顯示器。&lt;/p&gt;
@@ -27,7 +27,7 @@
 &lt;/ul&gt;
 &lt;h2 id=&#34;步驟&#34;&gt;步驟&lt;/h2&gt;
 &lt;h3 id=&#34;啟用開發者選項&#34;&gt;啟用開發者選項&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/Enabling_Dev.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/Enabling_Dev.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;1468&#34;
 	
@@ -44,7 +44,7 @@
 在“關於手機”的“軟體資訊”部分，點擊“版本號” 7 次。&lt;/p&gt;
 &lt;p&gt;之後，會彈出一個提示，告訴你已經成為了開發者。&lt;/p&gt;
 &lt;h3 id=&#34;啟用-adb-偵錯&#34;&gt;啟用 ADB 偵錯&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/Developer_Setting.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/Developer_Setting.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;2340&#34;
 	
@@ -60,7 +60,7 @@
 &gt;
 進入“開發者選項”，打開紅框標記的項目。&lt;/p&gt;
 &lt;h3 id=&#34;安裝-shizuku&#34;&gt;安裝 Shizuku&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/Shizuku.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/Shizuku.png&#34;
 	width=&#34;588&#34;
 	height=&#34;131&#34;
 	
@@ -78,7 +78,7 @@
     &gt;Play 商店上的 Shizuku&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Shizuku 是一個允許你直接調用手機系統 API 的應用，它允許你修改手機的屏幕分辨率設置。&lt;/p&gt;
 &lt;h3 id=&#34;啟動-shizuku&#34;&gt;啟動 Shizuku&lt;/h3&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/Shizuku_stopped.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/Shizuku_stopped.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;1488&#34;
 	
@@ -91,7 +91,7 @@
 	
 &gt;
 點擊“啟動”來啟動 Shizuku 服務。確保你已經打開了無線偵錯。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/Shizuku_running.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/Shizuku_running.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;2340&#34;
 	
@@ -105,7 +105,7 @@
 &gt;
 如果服務成功啟動，將會顯示“Shizuku 已運行”。&lt;/p&gt;
 &lt;h2 id=&#34;安裝-termux&#34;&gt;安裝 Termux&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/Termux.png&#34;
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/Termux.png&#34;
 	width=&#34;483&#34;
 	height=&#34;233&#34;
 	
@@ -124,7 +124,7 @@
 &lt;p&gt;Termux 是一個 Android 終端模擬器，允許你在手機上運行 shell 命令。建議從 F-Droid 安裝，因為 F-Droid 上的應用版本比 Play 商店上的版本更高。&lt;/p&gt;
 &lt;h2 id=&#34;在-termux-中使用-shizuku&#34;&gt;在 Termux 中使用 Shizuku&lt;/h2&gt;
 &lt;p&gt;回到 Shizuku。點擊“在終端應用中使用 Shizuku”，它會帶你到以下畫面。
-&lt;img src=&#34;https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/Shizuku_export.jpg&#34;
+&lt;img src=&#34;https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/Shizuku_export.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;2340&#34;
 	
@@ -138,7 +138,7 @@
 &gt;&lt;/p&gt;
 &lt;p&gt;現在，點擊“匯出文件”，並通過點擊左上角的“顯示根”以及點擊 Termux，將腳本文件匯出到 Termux。&lt;/p&gt;
 &lt;p&gt;你還可以創建一個文件夾並將腳本文件放在那裡（我創建了一個名為“Shizuku”的文件夾，我將所有的腳本都放在那裡）。
-&lt;img src=&#34;https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/export.jpg&#34;
+&lt;img src=&#34;https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/export.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;727&#34;
 	
@@ -151,7 +151,7 @@
 	
 &gt;&lt;/p&gt;
 &lt;h2 id=&#34;在-termux-中設置-shizukurish&#34;&gt;在 Termux 中設置 Shizuku（rish）&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/Termux.jpg&#34;
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/Termux.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;1091&#34;
 	
@@ -192,7 +192,7 @@
 &lt;h3 id=&#34;命令自動完成&#34;&gt;命令自動完成&lt;/h3&gt;
 &lt;p&gt;為了避免輸入如此長的命令，你可以使用終端提供的自動完成功能。&lt;/p&gt;
 &lt;p&gt;例如，在輸入“./cha”後，你可以點擊“Tab”按鈕（用紅圈標記）來自動完成命令的後續部分。
-&lt;img src=&#34;https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/Tab.jpg&#34;
+&lt;img src=&#34;https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/Tab.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;1371&#34;
 	
@@ -207,7 +207,7 @@
 &lt;h3 id=&#34;無線調試快捷方式&#34;&gt;無線調試快捷方式&lt;/h3&gt;
 &lt;p&gt;當你關閉手機時，無線快捷方式將被禁用。因此，每次啟動手機時，你都需要重新啟用無線調試。&lt;/p&gt;
 &lt;p&gt;這聽起來有點麻煩。然而，你可以將「無線調試」快捷方式放在通知欄中，加快打開無線調試的速度。
-&lt;img src=&#34;https://www.bthc2020.cyou/zh-hk/coding/dex-customize-resolution/Notification_Panel.jpg&#34;
+&lt;img src=&#34;https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/Notification_Panel.jpg&#34;
 	width=&#34;1080&#34;
 	height=&#34;2043&#34;
 	
