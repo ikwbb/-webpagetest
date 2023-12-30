@@ -187,7 +187,7 @@ Navigate to the folder where you have exported the script files previously by us
 &lt;h2 id=&#34;execute-the-command-for-changing-the-screen-resolution&#34;&gt;Execute the command for changing the screen resolution&lt;/h2&gt;
 &lt;p&gt;Now, execute the script we have prepared by typing the following command and pressing enter.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./change_resolution.sh
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, the screen resolution should be changed to 1280x1024.&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Now, the screen resolution should be changed to 1280x1024.  You may change the 1280x1024 to your desired screen resolution.&lt;/p&gt;
 &lt;h2 id=&#34;additional-tips&#34;&gt;Additional Tips&lt;/h2&gt;
 &lt;h3 id=&#34;command-auto-completion&#34;&gt;Command Auto-Completion&lt;/h3&gt;
 &lt;p&gt;To avoid typing such a long command, you may use the auto-complete function provided by the terminal.&lt;/p&gt;

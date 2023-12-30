@@ -13,7 +13,8 @@
         <pubDate>Fri, 29 Dec 2023 19:17:43 +0800</pubDate>
         
         <guid>https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/</guid>
-        <description>&lt;img src="https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/Samsung_Dex.png" alt="Featured image of post Samsung Dex 熒幕解析度自定義" /&gt;&lt;h2 id=&#34;介紹&#34;&gt;介紹&lt;/h2&gt;
+        <description>&lt;img src="https://ikwbb.github.io/zh-hk/coding/dex-customize-resolution/Samsung_Dex.png" alt="Featured image of post Samsung Dex 熒幕解析度自定義" /&gt;&lt;p&gt;&lt;strong&gt;本文由機器翻譯自英文版博客同文&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;介紹&#34;&gt;介紹&lt;/h2&gt;
 &lt;p&gt;在连接至“不支援”的顯示器時，Samsung Dex 可能會出現問題，但只要不將其連接到這樣的顯示器上，它仍然非常完美。&lt;/p&gt;
 &lt;p&gt;起初這並不是一個大問題，直到我第一次將它帶到我的工作場所——那裡提供了一個 4:3 1280x1024 的顯示器。
 我嘗試像往常一樣將我的三星手機連接到顯示器上。然而，它無法檢測到 4:3 寬高比的顯示器。&lt;/p&gt;
@@ -187,7 +188,7 @@
 &lt;h2 id=&#34;執行更改屏幕分辨率的命令&#34;&gt;執行更改屏幕分辨率的命令&lt;/h2&gt;
 &lt;p&gt;現在，通過輸入以下命令並按回車鍵，執行我們準備好的腳本。&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;./change_resolution.sh
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;現在，屏幕分辨率應該已經更改為 1280x1024。&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;現在，屏幕分辨率應該已經更改為 1280x1024。 你亦可以將1280x1024換成任何你想要的分辨率。&lt;/p&gt;
 &lt;h2 id=&#34;附加提示&#34;&gt;附加提示&lt;/h2&gt;
 &lt;h3 id=&#34;命令自動完成&#34;&gt;命令自動完成&lt;/h3&gt;
 &lt;p&gt;為了避免輸入如此長的命令，你可以使用終端提供的自動完成功能。&lt;/p&gt;
