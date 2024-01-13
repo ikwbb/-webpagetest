@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>倉頡字碼查詢</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1.25, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <script src="./charToBIG5Code.js"></script>
+    <!--script src="./strokesData.js"></script-->
+    <script src="./cangjie5.js"></script>
+    <script src="cangjieToKeyboard.js"></script>
+    
+    <div id="title">倉頡字碼查詢</div>
+    <div class="centre">
+    <input id="input" class="input" placeholder="輸入需要查詢的文字">
+    <div class="btn-div"><button id="btn"></button></div>
+    </div>
+    <!--div class="centre" id="trainareadiv">
+    <input id="trainarea" class="input" placeholder="練習區">
+    </div-->
+    <!--div id="reference">資料來源: <a href="http://input.foruto.com/cccls/cjzd.html">華通軟件</a> <a href="https://github.com/staristic/BIG5-JSON">GitHub:staristic/BIG5-JSON</a></div-->
+
+    <div id="pics" class="hidden"></div>
+
+    <script>
+        var input = document.getElementById("input");
+        var btn = document.getElementsByClassName("btn-div")[0];
+        var picsTray = document.getElementById('pics'); 
+
+
+        function engToCangjie(Eng){
+            var returnVal = "";
+            var array = Eng.split("");
+
+            for (i in array){
+
+                var ascii = array[i].charCodeAt();
+
+                if(~escape(array[i]).indexOf("%u")){
+                    returnVal += array[i];
+
+                } else if(ascii >= 97 && ascii <= 122){ 
+                    returnVal += cangjie[array[i]];
+
+                } else if(ascii >= 65 && ascii <= 90){
+                    returnVal += cangjie[array[i].toLowerCase()];
+                }
+            }
+            return returnVal;
+        }
+
+        input.focus();
+        btn.onclick = function(){
+            picsTray.innerHTML = "";
+            for(var i=0; i<=input.value.length-1; i++){
+                var big5code = big5[input.value[i]];
+                /*var newpics = document.createElement("img");
+                newpics.src = "http://input.foruto.com/cjdict/Images/CJZD_JPG/"+ big5code +".JPG";
+                picsTray.appendChild(newpics);*/
+
+                var newdivs = document.createElement("div");
+                var theCangjieCode = "";
+                var theEngCode = "";
+
+                var array = cangjie5[input.value[i]];
+                
+                for(k in array){
+
+                    if(k != 0){
+                        theCangjieCode += "<br>";
+                        theEngCode += "<br>";
+                    }
+
+                    theEngCode += array[k];
+                    theCangjieCode += engToCangjie(array[k]);
+
+                    
+
+                }
+
+
+                newdivs.className = "picTray";
+                newdivs.innerHTML = '<div class="innerTray"><div class="left"><div class="word">' + input.value[i] + '</div><div class="cangjieTitle panel-title">倉頡碼</div><div class="cangjieCode">' + theCangjieCode + '</div><div class="engTitle panel-title">英文碼</div><div class="engCode">' + theEngCode + '</div></div><div class="right"><img src="http://input.foruto.com/cjdict/Images/CJZD_JPG/' + big5code + '.JPG" alt=""></div></div>';
+                picsTray.appendChild(newdivs);
+            }
+        }
+
+        input.addEventListener("keydown", function(event) {
+            if (event.keyCode === 13) {
+                btn.click();
+            }
+        });
+    </script>
+    
+    
+</html>
