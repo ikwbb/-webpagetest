@@ -222,30 +222,6 @@
 &gt;&lt;/p&gt;
 </description>
         </item>
-        <item>
-        <title>Helloworld</title>
-        <link>https://ikwbb.github.io/zh-hk/p/helloworld/</link>
-        <pubDate>Wed, 27 Dec 2023 00:38:40 +0800</pubDate>
-        
-        <guid>https://ikwbb.github.io/zh-hk/p/helloworld/</guid>
-        <description>&lt;img src="https://ikwbb.github.io/zh-hk/p/helloworld/image1.png" alt="Featured image of post Helloworld" /&gt;&lt;h1 id=&#34;嗨&#34;&gt;嗨！&lt;/h1&gt;
-&lt;p&gt;歡迎來到我的博客！這是我的第一篇博文，僅作爲測試文章之用&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/zh-hk/p/helloworld/image1.png&#34;
-	width=&#34;1024&#34;
-	height=&#34;1024&#34;
-	
-	loading=&#34;lazy&#34;
-	
-		alt=&#34;花海&#34;
-	
-	
-		class=&#34;gallery-image&#34; 
-		data-flex-grow=&#34;100&#34;
-		data-flex-basis=&#34;240px&#34;
-	
-&gt;&lt;/p&gt;
-</description>
-        </item>
         
     </channel>
 </rss>
