@@ -149,6 +149,10 @@ body::before{
     transform: translateY(-3px);
 }
 
+.profolio-item:active {
+    transform: none;
+}
+
 .profolio-item-name {
     font-size: 24px;
     text-align: center;
