@@ -11,10 +11,10 @@
 
     <div class="tips-opened">
         <div class="solve-overflow">
-            <div class="tips-info">
-            <div class="close-btn" id="close-btn">X</div>
+            <div class="close-btn" id="close-btn">×</div>
             <div class="tips-title">設置與幫助</div>
-            <div class="tips-main">
+            <div class="tips-info">
+                <div class="tips-main">
                 <div class="simplified-title"><input type="checkbox" name="simplified">使用簡體字(不支持圖像拆字)</div>
 
                 <div class="difficulty-title">設置練習所用的常用字頻序(越低越簡單)</div>
@@ -36,13 +36,15 @@
                     <div class="abox"><input type="checkbox" name="difficulty-checkbox">7001-7072</div>
                 </div>
                 <ul>
-                    <li>點擊Enter或點擊Ans均可以獲取答案</li>
-                    <li>點擊<可以回到上一個字</li>
+                    <li>點擊 Enter 或點擊 Ans 均可以獲取答案</li>
+                    <li>點擊 &lt; 或者 Space + Backspace 可以回到上一個字</li>
                     <li>正確輸入顯示中的字後會自動跳轉到下一個詞</li>
                     <li>本網頁使用了以下資料:
                         <ul>
-                            <li><a href="http://input.foruto.com/cccls/cjzd.html">
-                                華通軟件</a></li>
+                            <li><a href="https://www.hkcards.com/">
+                                HKCards 倉頡字典</a></li>
+                            <!-- <li><a href="http://input.foruto.com/cccls/cjzd.html">
+                                華通軟件</a></li> -->
                             <li><a href="https://humanum.arts.cuhk.edu.hk/Lexis/lexi-can/faq.php?s=1">
                                 中文大學：常用字頻序表</a></li>
                             <li><a href="https://github.com/staristic/BIG5-JSON">
@@ -62,7 +64,7 @@
     <div class="main">
         <div class="input-area">
 
-            <div class="back btns"><</div>
+            <div class="back btns">&lt;</div>
             <div class="tips btns">···</div>
             <div class="showAns btns">Ans</div>
 
@@ -93,7 +95,7 @@
         </div>
     </div>
 
-<script src="charToBIG5Code.js"></script>
+<!-- <script src="charToBIG5Code.js"></script> -->
 <script src="cangjie5.js"></script>
 <script src="cangjieToKeyboard.js"></script>
 <script src="./script.js"></script>

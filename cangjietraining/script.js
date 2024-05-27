@@ -189,14 +189,14 @@ input.addEventListener("compositionend", function(){
     allowInputCheckFlag = true;
 });
 
-document.onkeydown = function(e){
-    var theEvent = window.event || e;
-    var code = theEvent.keyCode || theEvent.which || theEvent.charCode;
-    if (code == 13){
-            showAns();
+document.onkeydown = function(e) {
+    e = e || window.event;
+    var key = e.key; // 使用 key 属性代替 keyCode
+    if (key === 'Enter') { // 检查按下的是否是 Enter 键
+        showAns();
+    } else if (e.key === "Backspace" && e.shiftKey) {
+        backToPrevWord();
     }
-
-
 }
 
 input.onfocus = function(){
@@ -211,10 +211,13 @@ input.onblur = function(){
     }
 }
 
-
-backBtn.onclick = function(){
+function backToPrevWord() {
     if(lastWord != "")
         changeWord(lastWord);
+}
+
+backBtn.onclick = function(){
+    backToPrevWord();
 }
 
 for(let i=0; i<=14; i++){
@@ -263,7 +266,8 @@ function showAns(){
         panel.style.opacity = "1";
 
         if(!simplifiedFlag){
-            anspic.src = "http://input.foruto.com/cjdict/Images/CJZD_JPG/" + big5[currentWord] + ".JPG";
+            // anspic.src = "http://input.foruto.com/cjdict/Images/CJZD_JPG/" + big5[currentWord] + ".JPG";
+            anspic.src = `https://www.hkcards.com/img/cj/${encodeURIComponent(currentWord)}.png`
             anspic.style.display = "";
         }
 
