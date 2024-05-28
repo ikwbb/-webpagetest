@@ -272,11 +272,11 @@ function showAns(){
         }
 
         input.value = "";
-        if(isMobile && !simplifiedFlag){
-            input.blur();
-        } else if(isMobile && simplified){
-            input.focus();
-        }
+        // if(isMobile && !simplifiedFlag){
+        //     input.blur();
+        // } else if(isMobile && simplified){
+        //     input.focus();
+        // }
 
         var pendingCangjieCode = "";
         var pendingEngCode = "";
