@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>一句古詩詞</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .poem {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .poem-item {
+            margin-top: 20px;
+            font-family: DFKai-SB, Microsoft YaHei UI;
+        }
+
+        .poem-top {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .poem-classification {
+            color: lightgrey;
+            font-size: 1.2em;
+        }
+
+        .poem-top {
+            font-size: 1.5rem;
+        }
+
+        .poem-body {
+            font-size: 2.5rem;
+        }
+
+        .time-top {
+            font-size: 10rem;
+            font-family: "Microsoft Yahei Light";
+            margin-bottom: 10vh;
+        }
+
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/opencc-js@1.0.5/dist/umd/cn2t.js"></script> 
+</head>
+<body>
+    <div class="poem">
+        <div class="time-top">
+            <div id="time">23:33</div>
+        </div>
+        <div class="poem-top">
+            <div class="poem-item poem-author">請稍等片刻</div>
+            <div class="poem-item">&nbsp;--&nbsp;《</div>
+            <div class="poem-item poem-title">加載中</div>
+            <div class="poem-item">》</div>
+        </div>
+        <div class="poem-item poem-body"></div>
+        <div class="poem-item poem-classification"></div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            fetch("https://v1.jinrishici.com/all.json").then(response => {
+                if (!response.ok) {
+                    throw new Error("Network Response was not OK");
+                }
+                return response.json()
+            }).then(data => {
+                const converter = OpenCC.Converter({ from: 'cn', to: 'hk' });
+                document.querySelector(".poem-title").innerText = converter(data.origin);
+                document.querySelector(".poem-author").innerText = converter(data.author);
+                document.querySelector(".poem-body").innerText = converter(data.content);
+                document.querySelector(".poem-classification").innerText = converter(data.category);
+            }).catch(error => {
+                console.error(error);
+            });
+        }
+
+        setInterval(function() {
+            const now = new Date();
+            let hours = now.getHours();
+            let minutes = now.getMinutes();
+            let seconds = now.getSeconds();
+
+            hours = hours < 10 ? '0' + hours : hours;
+            minutes = minutes < 10 ? '0' + minutes : minutes;
+
+
+            const timeStr = `${hours}:${minutes}`;
+            document.getElementById("time").textContent = timeStr;
+
+        }, 1000);
+
+    </script>
+</body>
+</html>
