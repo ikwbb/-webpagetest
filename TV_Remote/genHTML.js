@@ -41,13 +41,16 @@ const bodyHTML = `
             <div class="channel-selecting-list-inner">
                 <div class="channel-list-item" code="83" type="channel" onclick="sendCMDByObj(this)">83 無綫新聞台</div>
                 <div class="channel-list-item" code="81" type="channel" onclick="sendCMDByObj(this)">81 翡翠台</div>
-                <div class="channel-list-item" code="82" type="channel" onclick="sendCMDByObj(this)">82 J2台</div>
-                <div class="channel-list-item" code="31" type="channel" onclick="sendCMDByObj(this)">31 數碼港台電視</div>
-                <div class="channel-list-item" code="32" type="channel" onclick="sendCMDByObj(this)">32 數碼港台電視</div>
+                <div class="channel-list-item" code="31" type="channel" onclick="sendCMDByObj(this)">31 數碼電視 31</div>
+                <div class="channel-list-item" code="32" type="channel" onclick="sendCMDByObj(this)">32 數碼港台 32</div>
                 <div class="channel-list-item" code="33" type="channel" onclick="sendCMDByObj(this)">33 中央電視台綜合頻道</div>
-                <div class="channel-list-item" code="85" type="channel" onclick="sendCMDByObj(this)">85 無線財經資訊台</div>
-                <div class="channel-list-item" code="76" type="channel" onclick="sendCMDByObj(this)">76 香港國際財經台</div>
-                <div class="channel-list-item" code="77" type="channel" onclick="sendCMDByObj(this)">77 奇妙電視中文台</div>
+                <div class="channel-list-item" code="34" type="channel" onclick="sendCMDByObj(this)">34 中國環球電視網記錄頻道</div>
+                <div class="channel-list-item" code="76" type="channel" onclick="sendCMDByObj(this)">76 HOY 國際財經台</div>
+                <div class="channel-list-item" code="77" type="channel" onclick="sendCMDByObj(this)">77 HOY TV</div>
+                <div class="channel-list-item" code="78" type="channel" onclick="sendCMDByObj(this)">78 HOY 資訊台</div>
+                <div class="channel-list-item" code="82" type="channel" onclick="sendCMDByObj(this)">82 TVB Plus</div>
+                <div class="channel-list-item" code="84" type="channel" onclick="sendCMDByObj(this)">84 明珠台</div>
+                <div class="channel-list-item" code="85" type="channel" onclick="sendCMDByObj(this)">85 鳳凰衛視香港台</div>
                 <div class="channel-list-item" code="96" type="channel" onclick="sendCMDByObj(this)">96 ViuTVsix</div>
                 <div class="channel-list-item" code="99" type="channel" onclick="sendCMDByObj(this)">99 ViuTV</div>
             </div>
