@@ -4,6 +4,16 @@
   <url>
     <loc>https://ikwbb.github.io/zh-hk/coding/qqtpve-wasm/</loc>
     <lastmod>2025-01-03T03:17:43+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://ikwbb.github.io/en/coding/qqtpve-wasm/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-HK"
+                href="https://ikwbb.github.io/zh-hk/coding/qqtpve-wasm/"
+                />
   </url><url>
     <loc>https://ikwbb.github.io/zh-hk/categories/</loc>
     <lastmod>2025-01-03T03:17:43+08:00</lastmod>
@@ -33,6 +43,16 @@
   </url><url>
     <loc>https://ikwbb.github.io/zh-hk/categories/gaming/</loc>
     <lastmod>2025-01-03T03:17:43+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://ikwbb.github.io/en/categories/gaming/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-HK"
+                href="https://ikwbb.github.io/zh-hk/categories/gaming/"
+                />
   </url><url>
     <loc>https://ikwbb.github.io/zh-hk/</loc>
     <lastmod>2025-01-03T03:17:43+08:00</lastmod>
@@ -49,12 +69,42 @@
   </url><url>
     <loc>https://ikwbb.github.io/zh-hk/tags/qqtang/</loc>
     <lastmod>2025-01-03T03:17:43+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://ikwbb.github.io/en/tags/qqtang/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-HK"
+                href="https://ikwbb.github.io/zh-hk/tags/qqtang/"
+                />
   </url><url>
     <loc>https://ikwbb.github.io/zh-hk/tags/qqtpve/</loc>
     <lastmod>2025-01-03T03:17:43+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://ikwbb.github.io/en/tags/qqtpve/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-HK"
+                href="https://ikwbb.github.io/zh-hk/tags/qqtpve/"
+                />
   </url><url>
     <loc>https://ikwbb.github.io/zh-hk/tags/qq%E5%A0%82/</loc>
     <lastmod>2025-01-03T03:17:43+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-UK"
+                href="https://ikwbb.github.io/en/tags/qq%E5%A0%82/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-HK"
+                href="https://ikwbb.github.io/zh-hk/tags/qq%E5%A0%82/"
+                />
   </url><url>
     <loc>https://ikwbb.github.io/zh-hk/tags/</loc>
     <lastmod>2025-01-03T03:17:43+08:00</lastmod>

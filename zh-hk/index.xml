@@ -17,14 +17,18 @@
 &lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ikwbb.github.io/qqtpve/build/web/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;在線試玩QQ堂復刻版本 &amp;ndash; QQTPVE&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&#34;關於qqtpve&#34;&gt;關於QQTPVE&lt;/h2&gt;
-&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/assets/image-20250103054659829.png&#34;
-	
-	
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/zh-hk/coding/qqtpve-wasm/image-20250103054659829.png&#34;
+	width=&#34;1270&#34;
+	height=&#34;386&#34;
 	
 	loading=&#34;lazy&#34;
 	
 		alt=&#34;image-20250103054659829&#34;
 	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;329&#34;
+		data-flex-basis=&#34;789px&#34;
 	
 &gt;&lt;/p&gt;
 &lt;p&gt;QQ堂早在2022年4月20日關服，而QQTPVE則是QQ堂的高度復刻版本，作者爲&lt;a class=&#34;link&#34; href=&#34;https://github.com/atxxfs/QQTPVE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
@@ -34,6 +38,12 @@
 &lt;p&gt;QQTPVE是由Pygame寫成的，因此我選擇了使用Pygbag將遊戲移植成WASM版本，方便在瀏覽器中直接打開遊玩。&lt;/p&gt;
 &lt;p&gt;遊戲核心使用了 &lt;a class=&#34;link&#34; href=&#34;https://github.com/detopoi/QQTPVE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
     &gt;detopoi/QQTPVE: By YongHeng ver20230418&lt;/a&gt; 的版本，而Resources則使用了atxxfs 提供的版本。&lt;/p&gt;
+&lt;h2 id=&#34;目前的問題&#34;&gt;目前的問題&lt;/h2&gt;
+&lt;p&gt;遊戲目前有以下問題：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;遊戲資源缺乏：Resources主要搬自2022年遊戲版本，對比2023年版本缺乏不少資源&lt;/li&gt;
+&lt;li&gt;平臺兼容性：在iPad上遊玩時，mixer.music 無法播放，目前用 mixer.sound 代替，容易卡頓&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>

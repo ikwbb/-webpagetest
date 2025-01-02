@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>QQTang on ikwbb&#39;s Blog</title>
+        <link>https://ikwbb.github.io/en/tags/qqtang/</link>
+        <description>Recent content in QQTang on ikwbb&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-UK</language>
+        <copyright>ikwbb</copyright>
+        <lastBuildDate>Fri, 03 Jan 2025 03:17:43 +0800</lastBuildDate><atom:link href="https://ikwbb.github.io/en/tags/qqtang/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>[QQTPVE] QQTang WASM Ported Version</title>
+        <link>https://ikwbb.github.io/en/coding/qqtpve-wasm/</link>
+        <pubDate>Fri, 03 Jan 2025 03:17:43 +0800</pubDate>
+        
+        <guid>https://ikwbb.github.io/en/coding/qqtpve-wasm/</guid>
+        <description>&lt;img src="https://ikwbb.github.io/en/coding/qqtpve-wasm/qqtpve-wasm.png" alt="Featured image of post [QQTPVE] QQTang WASM Ported Version" /&gt;&lt;h2 id=&#34;online-play&#34;&gt;Online Play&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ikwbb.github.io/qqtpve/build/web/index.html&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Play the QQ Tang Remake Online &amp;ndash; QQTPVE&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;about-qqtpve&#34;&gt;About QQTPVE&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://ikwbb.github.io/en/coding/qqtpve-wasm/image-20250103054659829.png&#34;
+	width=&#34;1270&#34;
+	height=&#34;386&#34;
+	
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;image-20250103054659829&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;329&#34;
+		data-flex-basis=&#34;789px&#34;
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;QQ Tang shut down on April 20, 2022, and QQTPVE is a highly faithful remake of QQ Tang, created by &lt;a class=&#34;link&#34; href=&#34;https://github.com/atxxfs/QQTPVE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;atxxfs&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This version closely replicates almost every aspect of the original game&amp;rsquo;s gameplay experience. It is the most perfect remake currently available. Thanks to the original developers for their contributions.&lt;/p&gt;
+&lt;h2 id=&#34;porting-qqtpve-to-the-browser&#34;&gt;Porting QQTPVE to the Browser&lt;/h2&gt;
+&lt;p&gt;QQTPVE was originally written in Pygame, so I chose to use Pygbag to port the game to a WASM version, making it easy to play directly in the browser.&lt;/p&gt;
+&lt;p&gt;The core game uses the version from &lt;a class=&#34;link&#34; href=&#34;https://github.com/detopoi/QQTPVE&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;detopoi/QQTPVE: By YongHeng ver20230418&lt;/a&gt;, and the resources are based on the version provided by atxxfs.&lt;/p&gt;
+&lt;h2 id=&#34;current-issues&#34;&gt;Current Issues&lt;/h2&gt;
+&lt;p&gt;The game currently has the following issues:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lack of game resources: The resources are primarily taken from the 2022 version, and there are many missing compared to the 2023 version.&lt;/li&gt;
+&lt;li&gt;Platform compatibility: When playing on an iPad, the &lt;code&gt;mixer.music&lt;/code&gt; cannot be played. Currently, &lt;code&gt;mixer.sound&lt;/code&gt; is used as a replacement, but it causes lag.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
