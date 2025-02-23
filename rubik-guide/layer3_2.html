@@ -224,7 +224,13 @@
         <!-- <h4 class="fw-light text-secondary">The Layer-By-Layer Method Explained</h4> -->
         <!-- <h1 class="display-5 mb-5">Second Layer</h1> -->
         <h3 class="display-5 fw-light mb-4">Your Goal</h3>
-        <img src="./image/Layer3_2_goal.png" alt="" class="img-fluid" style="max-width: 250px;">
+
+        <div class="row">
+          <div class="col-8 col-md-6 mx-auto">
+            <img src="./image/Layer3_2_goal.png" alt="" class="img-fluid">
+          </div>
+        </div>
+
         <p class="lead text-center text-body-secondary mt-5 px-2">Complete the whole cube by achieving the following sub-goals.</p>
 
         <!-- <p>
@@ -251,12 +257,22 @@
         
             <div class="text-center">
               <h4 class="fw-light my-3">Your Sub-Goal</h4>
-              <img src="./image/Layer3_2_sub_goal_1.png" alt="Forming the Cross" class="img-fluid d-block mx-auto" style="max-width: 250px;">
-
+              <div class="row">
+                <div class="col-10 col-md-6 mx-auto">
+                  <img src="./image/Layer3_2_sub_goal_1.png" alt="Forming the Cross" class="img-fluid d-block mx-auto">
+                </div>
+              </div>
               <hr>
 
               <div class="mt-3 mb-2 mt-3">Check the third layer's four corner sides for matching color pairs.</div>
-              <img src="./image/Layer3_2_sub_goal_1_same_vs_different.png" alt="Forming the Cross" class="img-fluid d-block mx-auto" style="max-width: 300px;">
+
+              <div class="row">
+                <div class="col-12 col-sm-10 col-md-6 mx-auto">
+                  <img src="./image/Layer3_2_sub_goal_1_same_vs_different.png" alt="Forming the Cross" class="img-fluid d-block mx-auto">
+                </div>
+              </div>
+
+
               <div class="mt-3 mb-2 mt-3">Then, position the matching pair on the left and execute the algorithm.</div>
               <div class="mt-3 mb-5 small text-secondary">(If the cube doesn't have a pair of corner, the same algorithm will create a pair.)</div>
               <!-- <h5 class="fw-bold mb-3">Easy Case</h5> -->
@@ -274,7 +290,7 @@
                     
                     <!-- <h4 class="fw-light my-2">With Pair</h4>  -->
                     <img class="bd-placeholder-img card-img-top" src="./image/Layer3_sub_goal_1_stage_1.png" alt="">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center w-100">
                       <h4 class="fw-light text-center algo-display-box mt-2"></h4>
                     </div>
                   </button>
@@ -292,7 +308,7 @@
                     
                     <h4 class="fw-light my-2">Without Pair</h4> 
                     <img class="bd-placeholder-img card-img-top" src="./image/Layer3_sub_goal_1_stage_2.png" alt="">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center w-100">
                       <h4 class="fw-light text-center algo-display-box mt-2"></h4>
                     </div>
                   </button>
@@ -320,11 +336,27 @@
 
             <div class="text-center">
               <h4 class="fw-light my-3">Your Sub-Goal</h4>
-              <img src="./image/Layer3_2_sub_goal_2.png" alt="Forming the Cross" class="img-fluid d-block mx-auto" style="max-width: 250px;">
+              <!-- <img src="./image/Layer3_2_sub_goal_2.png" alt="Forming the Cross" class="img-fluid d-block mx-auto" style="max-width: 250px;"> -->
+
+
+              <div class="row">
+                <div class="col-10 col-md-6 mx-auto">
+                  <img src="./image/Layer3_2_sub_goal_2.png" alt="Forming the Cross" class="img-fluid d-block mx-auto">
+                </div>
+              </div>
+
+
               <hr>
 
               <div class="mt-3 mb-2 mt-3">Put the solved side at the back. Then, repeat the following algorithm until solved.</div>
-              <img src="./image/Layer3_2_sub_goal_1_solved_side_vs_unsolved_side.png" alt="Forming the Cross" class="img-fluid d-block mx-auto" style="max-width: 300px;">
+              <!-- <img src="./image/Layer3_2_sub_goal_1_solved_side_vs_unsolved_side.png" alt="Forming the Cross" class="img-fluid d-block mx-auto" style="max-width: 300px;"> -->
+
+              <div class="row">
+                <div class="col-12 col-sm-10 col-md-6 mx-auto">
+                  <img src="./image/Layer3_2_sub_goal_1_solved_side_vs_unsolved_side.png" alt="Forming the Cross" class="img-fluid d-block mx-auto">
+                </div>
+              </div>
+
               <!-- <div class="mt-3 mb-2 mt-3">Then, position the matching pair on the left and execute the algorithm.</div> -->
               <div class="mt-3 mb-5 small text-secondary">(If the cube doesn't have a solved side, the same algorithm will create a solved side.)</div>
 
@@ -342,7 +374,7 @@
                     onclick="init_and_demonstrate(this.getAttribute('init-state'), this.getAttribute('exec-algo'), {X: -20, Y: -30})">
                     
                     <img class="bd-placeholder-img card-img-top" src="./image/Layer3_sub_goal_2_edge.png" alt="">
-                    <div class="card-body text-center">
+                    <div class="card-body text-center w-100">
                       <h4 class="fw-light text-center algo-display-box mt-2"></h4>
                     </div>
                   </button>
