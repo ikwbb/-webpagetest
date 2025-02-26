@@ -103,3 +103,9 @@ document.getElementById("faster-btn").onclick = function() {
     localStorage.setItem("speed_adjustment", speed_adjustment);
     document.getElementById("speed-text").innerText = speed_adjustment + "x";
 }
+
+
+function stopCube() {
+    var ALGO_START_DELAY = 9999999;
+    var ALGO_EXEC_SPEED = 9999999;
+}
