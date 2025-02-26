@@ -1,5 +1,5 @@
-const ALGO_START_DELAY = 2000;
-const ALGO_EXEC_SPEED = 2000;
+var ALGO_START_DELAY = 2000;
+var ALGO_EXEC_SPEED = 2000;
 
 var rubik = null;
 var lastInitState = null;
