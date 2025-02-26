@@ -106,6 +106,6 @@ document.getElementById("faster-btn").onclick = function() {
 
 
 function stopCube() {
-    var ALGO_START_DELAY = 9999999;
-    var ALGO_EXEC_SPEED = 9999999;
+    ALGO_START_DELAY = 9999999;
+    ALGO_EXEC_SPEED = 9999999;
 }
