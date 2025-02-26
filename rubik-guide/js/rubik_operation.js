@@ -114,3 +114,8 @@ function startCube() {
     ALGO_START_DELAY = 2000;
     ALGO_EXEC_SPEED = 2000;
 }
+
+function tmpStop() {
+    stopCube();
+    setTimeout(() => startCube(), 10000);
+}
