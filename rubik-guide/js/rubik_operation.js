@@ -109,3 +109,8 @@ function stopCube() {
     ALGO_START_DELAY = 9999999;
     ALGO_EXEC_SPEED = 9999999;
 }
+
+function startCube() {
+    ALGO_START_DELAY = 2000;
+    ALGO_EXEC_SPEED = 2000;
+}
