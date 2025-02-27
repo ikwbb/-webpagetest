@@ -346,6 +346,75 @@
         </div>
       </div>
 
+
+      
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingIncorrect">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#thirdLayerSide" aria-expanded="false" aria-controls="thirdLayerSide">
+            Third Layer (Side)
+          </button>
+        </h2>
+        <div id="thirdLayerSide" class="accordion-collapse collapse" aria-labelledby="headingIncorrect" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+
+            <div class="album pt-3 bg-body-tertiary">
+              <!-- <h1 class="display-5 text-center mb-4">Algorithms</h1> -->
+          
+          
+              <div class="container">
+          
+                <!-- <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 justify-content-center"> -->
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 justify-content-center">
+          
+                  <div class="algo-body col d-flex">
+                    <button
+                      class="card shadow-sm"
+                      init-state="YYY RXO BXG OXR GXB WWW 
+                                  YYY BBB RRR GGG OOO WWW
+                                  YYY BBB RRR GGG OOO WWW"
+                      exec-algo="F R' F L2 F' R F L2 F2"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal"
+                      onclick="init_and_demonstrate(this.getAttribute('init-state'), this.getAttribute('exec-algo'), {X: -20, Y: -30})">
+                      
+                      <img class="bd-placeholder-img card-img-top" src="./image/Remarks_Layer3_case1.png" alt="">
+                      <div class="card-body text-center w-100">
+                        <h4 class="fw-light text-center algo-display-box mt-2"></h4>
+                      </div>
+                    </button>
+                  </div>
+
+
+                  <div class="algo-body col d-flex">
+                    <button
+                      class="card shadow-sm"
+                      init-state="YYY BGB ROR GBG ORO WWW 
+                                  YYY BBB RRR GGG OOO WWW
+                                  YYY BBB RRR GGG OOO WWW"
+                      exec-algo="R U' R U R U R U' R' U' R2"
+                      data-bs-toggle="modal" data-bs-target="#exampleModal"
+                      onclick="init_and_demonstrate(this.getAttribute('init-state'), this.getAttribute('exec-algo'), {X: -20, Y: -30})">
+                      
+                      <img class="bd-placeholder-img card-img-top" src="./image/Remarks_Layer3_case2.png" alt="">
+                      <div class="card-body text-center w-100">
+                        <h4 class="fw-light text-center algo-display-box mt-2"></h4>
+                      </div>
+                    </button>
+                  </div>
+          
+          
+                </div>
+              </div>
+          
+          
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
     </div>
 
 
